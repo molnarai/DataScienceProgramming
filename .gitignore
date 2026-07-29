@@ -176,4 +176,6 @@ cython_debug/
 archive*/
 *.zip
 *_solution*
->>>>>>> 591fbc4f9578cd2e19cc5426b8d72db4d59a9cd3
+
+# Exlcude Hugo generated site
+www/public/*
