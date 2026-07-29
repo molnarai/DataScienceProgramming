@@ -50,12 +50,6 @@ jobs:
           python -m pip install --upgrade pip
           pip install bibtexparser
       
-      - name: Convert BibTeX to JSON
-        run: |
-          cd www/tools \
-          && mkdir -p ../data \
-          && ./bibtex2bibjson.py ../assets/publications.bib > ../data/publications.json
-      
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v6
