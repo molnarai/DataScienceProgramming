@@ -1,0 +1,59 @@
+{{ define "main" }}
+{{ partial "breadcrumbs.html" . }}
+<div class="project-list">
+    <article class="project-index">
+    <h1>{{ .Params.title }}</h1>
+    
+    <!-- Add the _index.md content at the top -->
+    {{ with .Content }}
+    <div class="section-description">
+        {{ . }}
+    </div>
+    {{ end }}
+    
+    <!-- <hr> -->
+    <h2>Milestones</h2>
+    <table class="table">
+        <caption>Table with Project Milestones and Due Dates</caption>
+        <thead>
+            <tr>
+                <th scope="col">Title</th><th scope="col">Description</th><th scope="col">Due Date</th><th scope="col">Grade</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{ range .Pages.ByWeight }}
+                <tr>
+                    <td><a href="{{ .RelPermalink }}">{{ .Title }}</a></td>
+                    <td>{{ .Params.description }}</td>
+                    <td>{{ .Params.submission }}</td>
+                    <td>{{ .Params.percent }}%</td>
+                </tr>
+            {{ end }}
+        </tbody>
+    </table>
+    <!-- <p style="margin-bottom: 5rex">
+        Please review instructions for completing and submitting each of the assigments. 
+    </p>
+    {{ range .Pages.ByWeight }}
+    <article class="assignment-item">
+        <h2 class="listing-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+        {{ if .Params.due_date }}
+            <div class="due-date" style="font-weight: bold;">Due: {{ .Params.due_date | time.Format "January 2, 2006" }}</div>
+        {{ end }}
+        
+        {{ with .Content }}
+            {{ $firstParagraph := findRE "<p>(.|\n)*?</p>" . 1 }}
+            {{ range $firstParagraph }}
+                <div class="summary">
+                    {{ . | replaceRE "</?p>" "" | markdownify | safeHTML }}
+                </div>
+            {{ end }}
+        {{ end }}
+        <div class="read-more">
+            <a href="{{ .RelPermalink }}" aria-label="Read more about {{ .Title }}">Read more →</a>
+        </div>
+    </article>
+    {{ end }} -->
+    </article>
+</div>
+{{ end }}

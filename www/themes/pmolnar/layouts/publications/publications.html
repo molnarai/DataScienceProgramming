@@ -1,0 +1,99 @@
+{{ define "main" }}
+<div class="publications-page">
+    <h1>{{ .Title }}</h1>
+
+    {{/* Get all publications */}}
+    {{ $publications := index site.Data.publications "records" }}
+
+    {{/* Filter controls */}}
+    <div class="filter-controls">
+        <label for="type-filter">Filter by type:</label>
+        <select id="type-filter">
+            <option value="">All Types</option>
+            {{ range $pub := $publications }}
+                {{ with .type }}
+                    <option value="{{ . }}">{{ humanize . }}</option>
+                {{ end }}
+            {{ end }}
+        </select>
+
+        <label for="year-filter">Filter by year:</label>
+        <select id="year-filter">
+            <option value="">All Years</option>
+            {{ range $pub := $publications }}
+                {{ with .year }}
+                    <option value="{{ . }}">{{ . }}</option>
+                {{ end }}
+            {{ end }}
+        </select>
+    </div>
+
+    <div aria-live="polite" aria-atomic="true" class="sr-only" id="filter-status"></div>
+
+    {{/* Group by type */}}
+    {{ $types := dict "article" "Journal Articles" "book" "Books" "inproceedings" "Conference Papers" "techreport" "Technical Reports" "misc" "Other Publications" }}
+    
+    {{ range $type, $title := $types }}
+        {{ $typePublications := where $publications "type" $type }}
+        {{ if $typePublications }}
+        <section class="publication-type" data-type="{{ $type }}">
+            <h2>{{ $title }}</h2>
+            <ul class="publications-list">
+                {{ range sort $typePublications "year" "desc" }}
+                    <li class="publication-item" data-year="{{ .year }}">
+                        {{- partial "publication.html" (dict "item" .) }}
+                    </li>
+                {{ end }}
+            </ul>
+        </section>
+        {{ end }}
+    {{ end }}
+</div>
+
+{{/* Add JavaScript for filtering */}}
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const typeFilter = document.getElementById('type-filter');
+    const yearFilter = document.getElementById('year-filter');
+    const publications = document.querySelectorAll('.publication-item');
+
+    function filterPublications() {
+        const selectedType = typeFilter.value;
+        const selectedYear = yearFilter.value;
+
+        publications.forEach(pub => {
+            const matchesType = !selectedType || pub.closest('.publication-type').dataset.type === selectedType;
+            const matchesYear = !selectedYear || pub.dataset.year === selectedYear;
+            pub.style.display = (matchesType && matchesYear) ? '' : 'none';
+        });
+
+        // Hide section headers if no visible publications
+        var visibleCount = 0;
+        document.querySelectorAll('.publication-type').forEach(section => {
+            const visiblePubs = [...section.querySelectorAll('.publication-item')]
+                .filter(pub => pub.style.display !== 'none');
+            visibleCount += visiblePubs.length;
+            section.style.display = visiblePubs.length > 0 ? '' : 'none';
+        });
+
+        document.getElementById('filter-status').textContent =
+            'Showing ' + visibleCount + ' publication' + (visibleCount !== 1 ? 's' : '');
+    }
+
+    typeFilter.addEventListener('change', filterPublications);
+    yearFilter.addEventListener('change', filterPublications);
+
+    // Remove duplicate options from filters
+    [typeFilter, yearFilter].forEach(select => {
+        const options = new Set();
+        [...select.options].forEach(option => {
+            if (options.has(option.value)) {
+                select.removeChild(option);
+            } else {
+                options.add(option.value);
+            }
+        });
+    });
+});
+</script>
+{{ end }}

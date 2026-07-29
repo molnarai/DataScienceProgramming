@@ -1,0 +1,107 @@
+baseURL = 'https://msa8050.molnar.ai'
+
+languageCode = 'en-us'
+title = 'IFI 8410'
+theme = ['pmolnar', 'reveal-hugo']
+buildFuture = true
+
+[services]
+  [services.googleAnalytics]
+    ID = "G-76SMSN09P2"
+
+[Params]
+  description = "IFI 8410 - Introduction to Programming and Predictive Analytics for Business"
+  images = ['/digital-garden-logo.png']
+  enableSearch = true
+
+[menu]
+[[menu.main]]
+  name = 'Home'
+  url = '/'
+  weight = 1
+[[menu.main]]
+  name = 'Topics'
+  url = '/topics'
+  weight = 2
+[[menu.main]]
+  name = 'Presentations'
+  url = '/slides'
+  weight = 3
+#[[menu.main]]
+#  name = 'Readings'
+#   url = '/readings'
+#  weight = 3
+#[[menu.main]]
+#  name = 'Homework'
+#  url = '/assignments'
+#  weight = 4
+#[[menu.main]]
+#  name = 'Project'
+#  url = '/project'
+#  weight = 5
+# [[menu.main]]
+#  name = 'Resources'
+#  url = '/resources'
+#  weight = 6
+[[menu.main]]
+  name = 'Blog'
+  url = '/blog'
+  weight = 7
+# [[menu.main]]
+#  name = 'Wiki'
+#  url = '/wiki'
+#  weight = 7
+[[menu.main]]
+  name = 'GitHub'
+  url = 'https://github.com/kingmolnar/DataScienceProgramming'
+  html = '<i class="fab fa-github" style="font-size:24px"></i>'
+  weight = 8
+
+
+# syntax highlight settings
+[markup]
+  [markup.highlight]
+    # style = "dracula"
+    style = "friendly"  # or github, dracula, etc."monokai"
+    lineNos = false
+    lineNumbersInTable = false
+  [markup.goldmark.renderer]
+    # Enable to include inline HTML
+    unsafe = true
+  [markup.goldmark.extensions.passthrough]
+    enable = true
+    [markup.goldmark.extensions.passthrough.delimiters]
+      block = [['$$', '$$'], ['\[', '\]']]
+      inline = [['$', '$'], ['\(', '\)']]
+
+
+[outputFormats.Reveal]
+baseName = "index"
+mediaType = "text/html"
+isHTML = true
+
+[params.reveal_hugo]
+theme = "black"
+highlight_theme = "monokai"
+slide_number = true
+history = true
+transition = "slide"
+
+[security]
+  [security.http]
+    urls = ['.*insight-gsu-edu-msa8050-public-files-us-east-1\.s3\.us-east-1\.amazonaws\.com.*', '.*insight-gsu-edu-msa8700-public-files-us-east-1\.s3\.us-east-1\.amazonaws\.com.*', '.*cdn\.jsdelivr\.net.*']
+
+[sitemap]
+  changeFreq = ''
+  disable = false
+  filename = 'sitemap.xml'
+  priority = -1
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+[params.wiki]
+  enableSearch = true
+  enableTOC = true
+  enableBreadcrumbs = true

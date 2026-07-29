@@ -1,0 +1,19 @@
+{{ define "main" }}
+
+    {{ partial "breadcrumbs.html" . }}
+    <header class="assignment-header">
+        <h1>{{ .Title }}</h1>
+        {{ if .Lastmod }}
+        <div class="due-date">
+            <strong>Last modified:</strong> {{ .Lastmod.Format "January 2, 2006" }}
+        </div>
+        {{ end }}
+    </header>
+    
+    <div class="assignment-content">
+    <article class="assignment">
+        {{ .Content }}
+    </article>        
+    </div>
+
+{{ end }}

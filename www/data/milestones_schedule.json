@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "title": "Schedule",
+    "source": "../../MSA8050F26_Schedule.xlsx",
+    "created": "2026-05-02T13:49:05.329877"
+  },
+  "records": [
+    {
+      "Milestone": "M01: Team roster, project choice, and 1-page execution plan",
+      "Date": "2026-09-02 00:00:00"
+    },
+    {
+      "Milestone": "M02: Data understanding & initial ETL report (schema, data quality, first ETL run)",
+      "Date": "2026-09-16 00:00:00"
+    },
+    {
+      "Milestone": "M03: Baseline system implemented and evaluated (ETL+features, metrics, runtime notes)",
+      "Date": "2026-09-30 00:00:00"
+    },
+    {
+      "Milestone": "M04: Improved system implemented, with comparative technical and quality metrics and initial trade-off analysis",
+      "Date": "2026-10-21 00:00:00"
+    },
+    {
+      "Milestone": "M05: Draft final report and slides with full baseline vs improved metrics and narrative",
+      "Date": "2026-11-11 00:00:00"
+    },
+    {
+      "Milestone": "M06: Final reports and video",
+      "Date": "2026-12-09 00:00:00"
+    }
+  ]
+}

@@ -178,4 +178,4 @@ archive*/
 *_solution*
 
 # Exlcude Hugo generated site
-www/public/*
+www/public

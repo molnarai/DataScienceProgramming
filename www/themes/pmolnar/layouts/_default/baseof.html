@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="{{ site.Language.LanguageCode }}" dir="{{ or site.Language.LanguageDirection `ltr` }}">
+<head>
+  {{ partial "head.html" . }}
+  {{ if not .IsHome }}
+    {{ partial "breadcrumbs-schema.html" . }}
+  {{ end }}
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <header>
+    {{ partial "header.html" . }}
+  </header>
+  <main id="main-content">
+    <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
+      {{ block "main" . }}{{ end }}
+    </div>
+  </main>
+  <footer>
+    {{ partial "footer.html" . }}
+  </footer>
+</body>
+</html>
