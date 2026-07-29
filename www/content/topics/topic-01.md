@@ -2,15 +2,15 @@
 date: 2026-08-26
 classdates: '2026-08-26'
 draft: false
-title: 'Course Overview & Scale'
-theoretical: "Course goals; three project tracks (recommender, graph segmentation, forecasting). Small vs large-scale data science: memory limits, communication cost, approximate vs exact methods."
-technical: "Intro to ARC, Spark, storage, and Slurm. Overview of datasets and fixed project options. In-class: explore briefs and data, discuss interests and team formation."
+title: 'Introduction to Python and the Course Environment'
+theoretical: "What Python is and why it dominates analytics and data science. Interpreted execution, the read-evaluate-print cycle, and how a notebook differs from a script."
+technical: "Open and run a Jupyter notebook; code cells vs markdown cells; variables, expressions, and printing output. In-class: guided notebook with arithmetic, strings, and variable assignment."
 weight: 10
 numsession: 1
 ---
 ## Theory
-Introduce the three problem domains: retail recommender systems, graph-based segmentation, and demand forecasting. Discuss how these tasks look on 'small data' (single-machine notebooks) versus 'large-scale' settings with millions of users, items, or time series. Define basic ML concepts (features, targets, train/validation/test splits, empirical risk) and highlight what changes when data no longer fits in memory (data locality, communication cost, approximate vs exact algorithms).
+Establish what Python is and why it became the default language for analytics and data science: readable syntax, an interactive workflow, and a large ecosystem of data libraries. Introduce the mental model of an interpreter that evaluates one expression at a time, and the read-evaluate-print cycle that makes notebooks feel conversational. Distinguish a notebook (an ordered collection of cells with saved output, meant for exploration) from a script (a file executed start to finish, meant for repeatable work), and explain why the course starts with the former and deliberately moves toward the latter. Define variables as names bound to values rather than boxes holding them, and preview the idea that clear naming is part of correctness, not decoration.
 
 ## Technical
-Introduce course logistics, ARC cluster, Spark, CubeFS, and Slurm at a high level. Present the three fixed project options and corresponding datasets. Walk through schemas and business context. In-class activity: students browse project briefs and datasets, sketch initial ideas for which track they might choose. If desired, collect a low-stakes background survey and project preferences.
+Walk through course logistics, tools, and the submission workflow. Open Jupyter, create a notebook, and demonstrate the difference between code cells and markdown cells, cell execution order, and what the execution counter tells you about state. Show variables, arithmetic and string expressions, and `print` versus the notebook's automatic display of the last expression. Cover saving work, clear file naming, and where materials live in the course repository (`01-Intro-Python-Notebooks/`). In-class activity: students complete a guided notebook exercise combining arithmetic, strings, and variable assignment, then save and name it according to the course convention. Homework: notebook setup and basic Python expressions.
 

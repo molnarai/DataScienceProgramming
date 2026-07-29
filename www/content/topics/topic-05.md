@@ -2,15 +2,15 @@
 date: 2026-09-23
 classdates: '2026-09-23'
 draft: false
-title: 'Time Series & Many-Series Forecasting'
-theoretical: "Time-series fundamentals: trend, seasonality, baselines (naïve, moving averages), and error metrics. Many-series forecasting and why simple single-series methods don't scale."
-technical: "EDA and feature engineering with Spark: sampling, grouped stats, and task-specific features for each track. Teams extend ETL to feature-ready tables and perform basic EDA."
+title: 'Files, Modules, and Scripts'
+theoretical: "Persistence: why programs read and write files. Paths and the working directory. Modules and namespaces; what makes a program runnable as a script."
+technical: "Reading and writing text and CSV files; `with` blocks; imports; `if __name__ == \"__main__\"`. In-class: convert notebook logic into a self-contained script."
 weight: 50
 numsession: 5
 ---
 ## Theory
-Cover time-series fundamentals: trend, seasonality, residuals, stationarity. Discuss classical baseline models (na√Øve last-value, moving averages, simple exponential smoothing) and appropriate error metrics (RMSE, MAE, MAPE). Emphasize the “many-series” setting in retail (thousands of product √ó store series) and what breaks from single-series methods: memory/compute constraints, the need for shared models or hierarchical structures, and proper time-based evaluation (rolling or expanding windows). Highlight how naive random splits cause leakage in time-series and why backtesting protocols are needed at scale. Include quick exercises computing simple baselines and errors on short synthetic series.
+Motivate persistence: a notebook loses its state, but a file outlives the session, which is what allows one program's output to become another's input. Develop a precise model of file paths — absolute versus relative, and the working directory that relative paths resolve against — since "file not found" is the most common error at this stage and is almost always a path problem rather than a code problem. Introduce text files as sequences of lines and CSV as a text convention with delimiters and a header row, along with the ambiguities that convention leaves open (quoting, embedded commas, encodings, missing fields). Explain modules and namespaces: importing binds names from another file, which is how code becomes reusable across programs. Close on the distinction between a file that is imported and a file that is run, and why a program needs a defined entry point.
 
 ## Technical
-Technical focus on exploratory data analysis (EDA) and feature engineering with Spark. Show patterns for EDA at scale: stratified sampling, approximate quantiles, grouped statistics, and visualization via sampled extracts. For each project type, demonstrate typical feature engineering: interaction counts and recency for recommenders, degree distributions and edge weights for graphs, lagged values and calendar features for forecasting. In-class: teams extend their ETL to produce initial feature-ready tables and perform basic EDA relevant to their project (e.g., item popularity histograms, graph degree histograms, seasonality plots from aggregated sales).
+Read and write text files using `with open(...)` blocks, and explain why the context manager is preferable to manual `close`. Process a file line by line, strip newlines, and handle a header row; then do the same work with the `csv` module and compare. Write output files and verify results by reading them back. Demonstrate importing from the standard library and from a local helper module in the same directory. Introduce the `if __name__ == "__main__"` guard and run the resulting program from the terminal with `python script.py`, previewing the command-line work of the next session. In-class activity: students convert working notebook logic into a self-contained script with functions and a main block. Homework: a file-processing assignment that reads input, produces output, and reports basic results.
 

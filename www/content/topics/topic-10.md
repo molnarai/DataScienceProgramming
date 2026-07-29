@@ -2,15 +2,15 @@
 date: 2026-10-28
 classdates: '2026-10-28'
 draft: false
-title: 'Optimization & Iterative Algorithms'
-theoretical: "Conceptual overview of gradient descent, SGD, mini-batching, and scalability. Data vs model parallelism; how optimization choices interact with distributed systems and iterative algorithms (e.g., ALS, PageRank)."
-technical: "Workflow orchestration: DAGs, scheduling, retries, logging. In-class: design and, where feasible, implement DAGs that run ETL and modeling pipelines on a schedule."
+title: 'Simulation and Randomness'
+theoretical: "Estimating an answer by repeated trials. Pseudorandomness and why seeds make randomness reproducible. Monte Carlo intuition; variability of an estimate across runs."
+technical: "The `random` module and NumPy random generators; seeding; sampling and repeated experiments; summarizing simulated outcomes. In-class: simulate a random process and compare runs."
 weight: 100
 numsession: 10
 ---
 ## Theory
-Provide a conceptual overview of gradient-based optimization: gradient descent, stochastic gradient descent, and mini-batching. Explain why full-batch methods become impractical with very large datasets, and how stochastic/mini-batch approaches trade variance for speed. Introduce data parallelism vs model parallelism and the idea of parameter servers/asynchronous updates (conceptually, not implementation-level). Connect these ideas back to specific algorithms used in the course (e.g., ALS vs SGD for factorization, iterative graph algorithms like PageRank). Emphasize that in practice, “good enough, fast” often wins over theoretically optimal but slow solutions.
+Introduce simulation as a way to answer a question by running an experiment many times instead of solving it analytically, which makes problems accessible long before the corresponding mathematics is. Explain pseudorandomness: the generator is deterministic given its seed, so results are reproducible on demand — a property that is essential for grading, debugging, and scientific reporting, not a limitation. Build Monte Carlo intuition through the estimate-as-average idea, and emphasize the point beginners most often miss: a simulated result is itself uncertain, it varies from run to run, and more trials shrink that variability in a predictable way. Discuss how to report a simulation honestly by stating the number of trials and the seed, and how the same machinery underlies resampling, sensitivity analysis, and probabilistic reasoning about real data.
 
 ## Technical
-Technical introduction to orchestration and automation with Airflow (or similar tooling). Explain DAG concepts, scheduling, retries, and logging. Show how to wrap Spark ETL and model-training steps into a workflow graph that can be triggered regularly. In-class: teams draft and, where possible, implement a simple DAG that runs at least their ETL and baseline or improved model pipelines. They think through what a daily or weekly production run would look like, including data refresh and model retraining steps.
+Use Python's `random` module and NumPy's random generators for uniform draws, integer draws, sampling with and without replacement, and shuffling. Set a seed and demonstrate that two seeded runs match exactly while two unseeded runs do not. Build a simulation as a function of the number of trials, so the same code can be run at different scales, and structure it with a loop that records each trial's outcome for later summary. Estimate a probability as a proportion of trials, then rerun at increasing trial counts and observe the estimate stabilizing. Summarize outcomes with the statistics and plots from the previous session, including a histogram of simulated results. In-class activity: students simulate a simple random process and compare outcomes across runs and seeds. Homework: implement a simulation study and explain the results.
 

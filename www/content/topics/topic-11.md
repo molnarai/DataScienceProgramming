@@ -2,15 +2,15 @@
 date: 2026-11-04
 classdates: '2026-11-04'
 draft: false
-title: 'Robustness, Drift & Monitoring'
-theoretical: "Robustness to noise, outliers, and missing data in large logs. Covariate shift and concept drift; what to monitor (distributions, metrics) over time with limited compute."
-technical: "Testing, CI/CD, and reliability: schema and data checks, ML sanity tests, simple CI flows. Teams add tests and document a CI/CD-style deployment and monitoring plan."
+title: 'Search and Hashing'
+theoretical: "Search as a fundamental operation. Linear versus binary search and the assumptions each requires. Hashing intuition and why dictionary lookup is fast; introductory efficiency tradeoffs."
+technical: "Implement linear and binary search; time lookups on lists versus dictionaries and sets; compare approaches empirically. In-class: compare lookup methods on structured data."
 weight: 110
 numsession: 11
 ---
 ## Theory
-Discuss robustness and uncertainty in large-scale systems: impact of noisy labels, missing data, and outliers when logs are huge but not perfectly clean. Introduce covariate shift and concept drift with examples from retail (seasonality, changing customer behavior, product additions). Cover monitoring concepts from a theoretical perspective: what to track (distributional changes, performance on holdout slices), how to construct 'cheap checks' (schema checks, basic distribution checks) versus more detailed periodic evaluations. Emphasize that even with big data, computational limits constrain how often and how deeply models can be monitored.
+Use search as the entry point to algorithmic thinking: the same question — is this item present, and where — admits strategies with very different costs. Develop linear search as the general method that always works, then binary search as a much faster method that buys its speed with an assumption (the data must be sorted) and works by halving the remaining range. Introduce the intuition behind hashing: a hash function maps a key to a location, so a dictionary can go more or less directly to the value instead of scanning, which is why lookup cost barely grows with size. Present efficiency informally but honestly, in terms of how the work scales as data grows rather than formal notation, and name the tradeoffs: sorting has an upfront cost, dictionaries and sets use extra memory, and the fastest approach depends on how many lookups you will perform.
 
 ## Technical
-Technical focus on testing, CI/CD, and reliability practices for data and ML pipelines. Show examples of basic tests for ETL (schema validation, row-count expectations, null checks) and for ML (sanity checks on metrics, simple invariants). Demonstrate how to integrate tests into a simple CI pipeline (e.g., running checks on every commit, or nightly). In-class: teams add tests or validation steps to their projects, plan a CI/CD-style workflow, and document how their system would behave in a production-like environment (including monitoring and retraining triggers).
+Implement linear search over a list, returning an index or a sentinel for absent items, and test it against edge cases: empty input, first element, last element, and duplicates. Implement binary search with explicit low and high bounds, tracing the shrinking interval by hand before coding it, and confirm what happens if the input is unsorted. Time all three approaches — list scan, binary search on a sorted list, dictionary or set lookup — at several input sizes and tabulate the results so the scaling difference is visible rather than asserted. Revisit `in` on a list versus a set with this cost model in mind. In-class activity: students compare lookup methods on structured data and report timings. Homework: write search-related functions and compare their behavior on test inputs.
 
