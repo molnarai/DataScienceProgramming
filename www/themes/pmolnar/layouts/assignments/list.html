@@ -1,56 +1,47 @@
 {{ define "main" }}
 {{ partial "breadcrumbs.html" . }}
 <div class="assignments-list">
-    <h1>{{ .Params.title }}</h1>
-    
-    <!-- Add the _index.md content at the top -->
-    {{ with .Content }}
-    <div class="section-description">
-        {{ . }}
-    </div>
-    {{ end }}
-    
-    <table class="table">
-        <caption>Assignments</caption>
-        <thead>
-            <tr>
-                <th scope="col">Due Date</th><th scope="col">Assignment</th><th scope="col">Status</th>
-            </tr>
-        </thead>
-        <tbody>
-            {{ range .Pages.ByWeight }}
+    <article class="assignment-index">
+        <h1>{{ .Params.title }}</h1>
+
+        <!-- Add the _index.md content at the top -->
+        {{ with .Content }}
+        <div class="section-description">
+            {{ . }}
+        </div>
+        {{ end }}
+
+        <h2>Assignments</h2>
+        <table class="table">
+            <caption>Table with Homework Assignments and Due Dates</caption>
+            <thead>
                 <tr>
-                    <td>{{ .Params.due_date }}</td>
-                    <td><a href="{{ .RelPermalink }}">{{ .Title }}</a></td>
-                    <td>{{ .Params.status | markdownify }}</td>
+                    <th scope="col">Assignment</th><th scope="col">Due Date</th><th scope="col">Status</th>
                 </tr>
-            {{ end }}
-        </tbody>
-    </table>
-    <p style="margin-bottom: 5rex">
-        Please review instructions for completing and submitting each of the assigments. 
-    </p>
+            </thead>
+            <tbody>
+                {{ range .Pages.ByWeight }}
+                    <tr>
+                        <td><a href="{{ .RelPermalink }}">{{ .Title }}</a></td>
+                        <td>{{ .Params.due_date }}</td>
+                        <td>{{ .Params.status | markdownify }}</td>
+                    </tr>
+                {{ end }}
+            </tbody>
+        </table>
+        <p>
+            Please review instructions for completing and submitting each of the assignments.
+        </p>
+    </article>
     {{ range .Pages.ByWeight }}
     <article class="assignment-item">
         <h2 class="listing-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
         {{ if .Params.due_date }}
-            <div class="due-date" >
-                <!-- <span style="font-weight: bold;">Due: {{ .Params.due_date | time.Format "January 2, 2006" }}</span> -->
-                <span style="font-weight: bold;">Due: {{ .Params.due_date }}</span>
-                 {{- if .Params.status }}&nbsp;( {{- .Params.status | markdownify }}){{ end }}
+            <div class="due-date">
+                Due: {{ .Params.due_date | time.Format "January 2, 2006" }}
+                {{- with .Params.status }} ({{ . | markdownify }}){{ end }}
             </div>
         {{ end }}
-        <!-- {{ with .Content }}
-            {{ $paragraphs := split . "<p>" }}
-            {{ range $index, $paragraph := $paragraphs }}
-                {{ if and (gt $index 0) (not (findRE "^\\s*$" $paragraph)) }}
-                    <div class="summary">
-                        {{ $paragraph | replaceRE "</p>.*" "" | markdownify | safeHTML }}
-                    </div>
-                    {{ break }}
-                {{ end }}
-            {{ end }}
-        {{ end }} -->
         {{ with .Content }}
             {{ $firstParagraph := findRE "<p>(.|\n)*?</p>" . 1 }}
             {{ range $firstParagraph }}

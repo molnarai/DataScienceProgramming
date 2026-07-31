@@ -528,9 +528,11 @@ article {
     font-size: 0.9em;
 }
 
-/* Project pages: more breathing room above headings */
+/* Project & assignment pages: more breathing room above headings */
 .project-list h1,
 .project-index h1,
+.assignments-list h1,
+.assignment-index h1,
 .assignment .assignment-header h1 {
     margin-top: 2.5rem;
 }
@@ -539,6 +541,8 @@ article {
 .project-list h3,
 .project-index h2,
 .project-index h3,
+.assignment-index h2,
+.assignment-index h3,
 .assignment .assignment-content h2,
 .assignment .assignment-content h3 {
     margin-top: 2rem;

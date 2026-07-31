@@ -15,7 +15,7 @@ transition = "none"
 
 {{< slide state="jitter" background-image="/imgs/slides/Philips_PM5544.svg" >}}
 <div class="background-box">
-    <h1 contenteditable="true" style="color:white; text-shadow: 2px 2px 4px rgba(0,0,0,0.7);" >MSA 8050</h1>
+    <h1 contenteditable="true" style="color:white; text-shadow: 2px 2px 4px rgba(0,0,0,0.7);" >IFI 8410</h1>
     <p contenteditable="true" style="color:white; text-shadow: 2px 2px 4px rgba(0,0,0,0.7);" >Class will begin soon</p>
 </div>
 

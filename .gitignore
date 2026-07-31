@@ -179,3 +179,4 @@ archive*/
 
 # Exlcude Hugo generated site
 www/public
+private/
