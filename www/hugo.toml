@@ -54,8 +54,11 @@ buildFuture = true
 [[menu.main]]
   name = 'GitHub'
   url = 'https://github.com/molnarai/DataScienceProgramming'
-  html = '<i class="fab fa-github" style="font-size:24px"></i>'
   weight = 8
+  # Custom menu data must be nested under `params` —
+  # Hugo silently discards unknown top-level keys on a menu entry.
+  [menu.main.params]
+    html = '<i class="fab fa-github" style="font-size:24px"></i>'
 
 
 # syntax highlight settings

@@ -41,6 +41,14 @@ Renders a menu for the given menu ID.
         {{- $name = . }}
       {{- end }}
     {{- end }}
+    {{- /* A menu entry may supply raw markup (e.g. a Font Awesome icon) via its
+           `html` param; fall back to the plain name. Keep the name as the
+           accessible label, since an icon carries no text. */}}
+    {{- $label := $name }}
+    {{- with .Params.html }}
+      {{- $label = . | safeHTML }}
+      {{- $attrs = merge $attrs (dict "aria-label" $name "title" $name) }}
+    {{- end }}
     <li class="nav-item">
       <a class="nav-link"
         {{- range $k, $v := $attrs }}
@@ -48,7 +56,7 @@ Renders a menu for the given menu ID.
             {{- printf " %s=%q" $k $v | safeHTMLAttr }}
           {{- end }}
         {{- end -}}
-      >{{ $name }}</a>
+      >{{ $label }}</a>
       {{- with .Children }}
         <ul>
           {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
