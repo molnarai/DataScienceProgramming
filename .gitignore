@@ -180,3 +180,5 @@ archive*/
 # Exlcude Hugo generated site
 www/public
 private/
+
+!www/static/files/syllabus.pdf

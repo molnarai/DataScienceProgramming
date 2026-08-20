@@ -14,3 +14,5 @@ Frame supervised learning as fitting a mapping from features to a label using ex
 ## Practice
 Walk through the scikit-learn workflow end to end on a small dataset: build a feature matrix and a label vector from a DataFrame, split with `train_test_split` using a fixed `random_state`, fit an estimator, predict on the test set, and score the result. Use one classifier and one regressor so both metric families appear, and compare each against a trivial baseline (predict the majority class, predict the mean). Demonstrate the failure directly by scoring on the training set and on the test set and comparing the two numbers. Inspect a confusion matrix to see which cases the classifier actually gets wrong. In-class activity: students train and evaluate a simple model on a toy dataset and report both scores. Homework: fit a basic model, report results, and discuss limitations.
 
+## Reading
+- Kelleher, Mac Namee, *D'Arcy Fundamentals of Machine Learning for Predictive Data Analytics*, 2nd Edition, MIT Press, 2020, ISBN-13 978-0262044691. Electronic version available at the [GSU Library](https://library.gsu.edu).
