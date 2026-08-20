@@ -63,7 +63,7 @@
   <h2>Schedule</h2>
   {{ $events := index site.Data.schedule "records" }} 
   <table class="table">
-    <caption>Class Schedule</caption>
+    <caption class="sr-only">Class Schedule</caption>
     <thead>
       <tr>
         <th scope="col">Session</th>
@@ -148,7 +148,7 @@
     {{ if $milestones }}
       <h3>Project Milestones</h3>
       <table class="table">
-        <caption>Project Milestones</caption>
+        <caption class="sr-only">Project Milestones</caption>
         <thead>
           <tr>
             <th scope="col">Milestone</th>

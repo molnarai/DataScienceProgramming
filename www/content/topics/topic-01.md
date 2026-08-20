@@ -28,8 +28,8 @@ The hands-on half covers course logistics, tools, and the submission workflow, t
 - [Introduction to Computing and Programming](../../slides/slide-01-introduction-computing/) - Overview of the functional components of computers and fundumentals of programming languages
 
 
-## Read
+<!-- ## Read
 
-- TBD
+- TBD -->
 
 
