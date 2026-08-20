@@ -2,7 +2,7 @@
 title: Homepage
 extended_title: 'IFI 8410: Introduction to Programming and Predictive Analytics for Business'
 layout: home
-description: 'This course introduces students to the science of business analytics and covers foundational material needed to use, apply and develop analytic solutions to real-world business challenges. Students will learn to identify the appropriate methods to collect, analyze, and visualize data and utilize data in decision making. Examples will illustrate the use of models to solve business problems such as reducing customer churn, customer segmentation, predicting market demand, forecasting stock prices, etc. Both structured and unstructured data will be used throughout the course. The course prepares students for IFI 8420, which focuses on the implications of machine learning and artificial intelligence for business strategy and creating business value.'
+description: 'This course introduces students to '
 jumbotron: "../imgs/The_Analytics_Launchpad_Training_Foundation.png"
 podcasturl: 'https://insight-gsu-edu-msa8700-public-files-us-east-1.s3.us-east-1.amazonaws.com/podcast/ifi8410_python_git_and_unix_for_ai.m4a'
 ---
@@ -14,6 +14,10 @@ podcasturl: 'https://insight-gsu-edu-msa8700-public-files-us-east-1.s3.us-east-1
 
 ## Documents
 - [Course Syllabus (PDF)](files/syllabus.pdf)
+
+
+## Teaching Assistants, Labs & Office Hours
+Visit the class page on [iCollege](https://icollege.gsu.edu/) for current information.
 
 <!-- <a href="files/syllabus.pdf" download class="download-link">
     <svg class="download-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
