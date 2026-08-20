@@ -1,59 +1,30 @@
 +++
-date = '2025-01-06T18:20:46-05:00'
-due_date = "2025-04-14"
+date = '2026-09-23'
+due_date = '2026-10-06'
 draft = false
-title = 'Homework 4 Design Document for Project'
+title = 'Homework 4: Files, Modules, and Scripts'
 weight = 40
-status = 'Posted'
+status = 'Scheduled'
 +++
 
-The objective is to create design document for your Gen AI project. The document includes a requirements document outlining functional and non-functional needs, prioritized user stories to guide development, a roadmap with key milestones, and specific tasks assigned to team members. Additionally, the document defines clear roles and responsibilities within the team to ensure effective collaboration and project management. 
-<!-- mode -->
+Move your work out of the notebook and into a runnable program. You will read and write text and CSV files using `with` blocks, reason about paths and the working directory, organize code into importable modules, and package the result as a self-contained script guarded by `if __name__ == "__main__"`.
+
+<!-- more -->
+
 ---
 
+**Posted:** September 23, 2026 &nbsp;&nbsp;|&nbsp;&nbsp; **Due:** Tuesday, October 6, 2026 at 23:59
 
-## Design Document Outline
+Related session: [Session 5 — Files, Modules, and Scripts](../../topics/topic-05/)
 
-### 1. Requirements Document
+### Topics Covered
 
-1. **Introduction**: Briefly introduce the project and its objectives.
-2. **Functional Requirements**: List the necessary features and functionalities of your Gen AI solution. For example:
-   - The system must be able to process natural language inputs.
-   - The system should provide personalized recommendations based on user data.
-3. **Non-Functional Requirements**: Include aspects like performance, security, and usability. For instance:
-   - The system must respond to user queries within 2 seconds.
-   - The system should ensure data privacy and comply with relevant regulations.
-4. **User Interface Requirements**: Describe the desired user experience and interface elements. For example:
-   - The system should have a user-friendly chat interface.
-   - The system should be accessible on both desktop and mobile devices.
+- Persistence: why programs read and write files
+- Paths, the working directory, and portable file access
+- Reading and writing text and CSV files; `with` blocks
+- Modules, imports, and namespaces
+- Making a program runnable as a script
 
-### 2. Prioritized User Stories
+### Instructions
 
-1. **Format**: Use the format: "As a [user type], I want to [perform some task] so that [I can achieve some goal]."
-2. **Prioritization**: Prioritize user stories based on their importance and complexity. Use techniques like MoSCoW method (Must-Haves, Should-Haves, Could-Haves, Won't-Haves) or Kano model.
-3. **Example User Stories**:
-   - As a customer service manager, I want to integrate the AI chatbot with our existing CRM system so that I can track customer interactions more efficiently.
-   - As a customer, I want to receive personalized product recommendations based on my purchase history so that I can find relevant products quickly.
-
-### 3. Roadmap
-
-1. **Project Timeline**: Create a timeline that outlines major milestones and deadlines.
-2. **Phases**: Break down the project into phases (e.g., research, development, testing, deployment).
-3. **Key Deliverables**: Identify what needs to be delivered at the end of each phase.
-
-### 4. Tasks
-
-1. **Task Breakdown**: Break down each phase into specific tasks. For example:
-   - Research phase: Conduct market analysis, gather user feedback.
-   - Development phase: Develop AI model, integrate with CRM.
-2. **Task Assignment**: Clearly assign tasks to team members based on their skills and strengths.
-
-### 5. Responsibilities and Roles
-
-1. **Team Roles**: Define roles within the team (e.g., project manager, developer, designer).
-2. **Responsibilities**: Clearly outline the responsibilities for each role. For example:
-   - Project Manager: Oversees project timeline, ensures tasks are completed on time.
-   - Developer: Develops and tests the AI model and integration.
-   - Designer: Designs the user interface and user experience.
-
-
+*The detailed tasks, starter files, and submission instructions for this assignment have not been posted yet. Please check back after the September 23 session.*

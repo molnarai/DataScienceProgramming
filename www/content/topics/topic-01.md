@@ -3,8 +3,8 @@ date: 2026-08-26
 classdates: '2026-08-26'
 draft: false
 title: 'Introduction to Python and the Course Environment'
-theoretical: "What Python is and why it dominates analytics and data science. Interpreted execution, the read-evaluate-print cycle, and how a notebook differs from a script."
-technical: "Open and run a Jupyter notebook; code cells vs markdown cells; variables, expressions, and printing output. In-class: guided notebook with arithmetic, strings, and variable assignment."
+concept: "What Python is and why it dominates analytics and data science. Interpreted execution, the read-evaluate-print cycle, and how a notebook differs from a script."
+practice: "Open and run a Jupyter notebook; code cells vs markdown cells; variables, expressions, and printing output. In-class: guided notebook with arithmetic, strings, and variable assignment."
 weight: 10
 numsession: 1
 ---

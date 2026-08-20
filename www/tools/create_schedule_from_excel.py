@@ -26,7 +26,7 @@ def _clean(value):
 
 def main(filename: str, dry_run: bool = False, over_write: bool = False):
     schedule_df = pd.read_excel(filename)
-    columns_to_keep = ["Session", "Topic", "InClass", "Milestone"]
+    columns_to_keep = ["Session", "Topic", "InClass", "Assignment"]
     available_columns = [col for col in columns_to_keep if col in schedule_df.columns]
     missing = [col for col in columns_to_keep if col not in schedule_df.columns]
     if missing:

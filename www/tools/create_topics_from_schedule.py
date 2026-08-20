@@ -62,15 +62,15 @@ date: {hugo_date}
 classdates: '{dt}'
 draft: false
 title: '{topic}'
-theoretical: "{theoretical_brief}"
-technical: "{technical_brief}"
+concept: "{theoretical_brief}"
+practice: "{technical_brief}"
 weight: {10*session}
 numsession: {session}
 ---
-## Theory
+## Concept
 {theoretical}
 
-## Technical
+## Practice
 {technical}
 
 """

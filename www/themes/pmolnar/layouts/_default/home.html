@@ -71,7 +71,7 @@
         <th scope="col">Topic</th>
         <!-- <th scope="col">Topic</th> -->
         <th scope="col">In Class</th>
-        <th scope="col">Project Milestone</th>
+        <th scope="col">Assignment</th>
       </tr>
     </thead>
     <tbody>
@@ -94,7 +94,18 @@
         {{ end }}
       </td>
       <td>{{- .InClass }}</td>
-      <td>{{ if .Milestone }}{{ index (split .Milestone ".") 0 }}{{ end }}</td>
+      <td>
+        {{ with .Assignment }}
+          {{ $label := index (split . ".") 0 }}
+          {{ $num := substr $label -2 }}
+          {{ $page := site.GetPage (printf "/assignments/assignment-%s" $num) }}
+          {{ if $page }}
+            <a href="{{ $page.RelPermalink }}">{{ $label }}</a>
+          {{ else }}
+            {{ $label }}
+          {{ end }}
+        {{ end }}
+      </td>
     </tr>
   {{ end }}
     </tbody>
@@ -125,7 +136,7 @@
   {{ end }} -->
 
   <!-- Project -->
-  {{ $projects := where site.RegularPages "Section" "project" }}
+  <!-- {{ $projects := where site.RegularPages "Section" "project" }}
   {{ if $projects }}
     <h2>Project</h2>
     
@@ -142,7 +153,6 @@
           <tr>
             <th scope="col">Milestone</th>
             <th scope="col">Due</th>
-            <!-- <th scope="col">Wednesday due</th> -->
           </tr>
         </thead>
         <tbody>
@@ -150,14 +160,13 @@
         <tr>
           <td>{{- .Milestone }}</td>
           <td>{{- (time .Date) | time.Format "2006-01-02" }}</td>
-          <!-- <td>{{- .Wednesday}}</td> -->
         </tr>
       {{ end }}
         </tbody>
       </table>
     {{ end }}
 
-  {{ end }}
+  {{ end }} -->
 
  
 
