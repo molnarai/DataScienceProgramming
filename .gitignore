@@ -181,4 +181,11 @@ archive*/
 www/public
 private/
 
-!www/static/files/syllabus.pdf
+# Handouts published by the site — the blanket *.pdf rule above
+# would otherwise keep them out of the deployed build.
+!www/static/files/*.pdf
+
+# reveal.js ships its runtime in a dist/ folder — the Python packaging
+# rules above must not swallow it, or the slideshow breaks once deployed.
+!www/themes/reveal-hugo/static/reveal-js/dist/
+!www/themes/reveal-hugo/assets/reveal-js/dist/
