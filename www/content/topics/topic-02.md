@@ -29,7 +29,7 @@ The practical half builds outward from small, self-contained tasks toward larger
 - [Wes McKinney: Python for Data Analysis: Chapter 3](https://wesmckinney.com/book/python-builtin)
 
 ## Hands-on
-The follow
+Notebooks in [02-Types-Strings-Conditionals](https://github.com/molnarai/DataScienceProgramming/tree/main/02-Types-Strings-Conditionals)
 
 
 ## References
