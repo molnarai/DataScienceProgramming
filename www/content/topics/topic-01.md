@@ -20,7 +20,7 @@ The hands-on half covers course logistics, tools, and the submission workflow, t
 
 ## Listen
 
-{{< podcast src="https://insight-gsu-edu-msa8700-public-files-us-east-1.s3.us-east-1.amazonaws.com/podcast/ifi8410_python_logic_and_the_literal_machine.m4a" title="Evaluating Large Language Models" >}}
+{{< podcast src="https://insight-gsu-edu-msa8700-public-files-us-east-1.s3.us-east-1.amazonaws.com/podcast/ifi8410_python_logic_and_the_literal_machine.m4a" title="Python Logic and the Literal Machine" >}}
 
 
 ## Presentation
