@@ -8,9 +8,34 @@ practice: "String methods and f-string formatting; explicit type conversion; `if
 weight: 20
 numsession: 2
 ---
-## Concept
-Introduce Python's core scalar types (integers, floats, strings, booleans) and the idea that a value's type determines which operations are meaningful. Discuss why `"5" + 5` fails while `5 + 5.0` succeeds, and use that to motivate explicit conversion over implicit coercion. Cover the pitfalls beginners meet first: floating-point values that do not compare exactly, integer division versus true division, and strings that look numeric but are not. Present comparison operators and boolean logic as the machinery for expressing a decision, then introduce branching as a control structure: exactly one path of an `if`/`elif`/`else` chain runs, order matters, and an unreachable branch is a logic error even when the code is syntactically valid.
 
-## Practice
-Work through string operations in depth: indexing, slicing, concatenation, and the common methods (`lower`, `upper`, `strip`, `split`, `replace`, `startswith`, `find`) that do most of the practical work in text handling. Demonstrate f-strings for readable output formatting. Show `int()`, `float()`, `str()`, and `bool()` conversions along with the errors raised when a conversion is impossible, and read those tracebacks aloud as a debugging skill. Write conditional logic step by step, tracing which branch executes for a given input. In-class activity: students classify simple values by type and write short transformations of text input, using conditionals to handle empty or malformed cases. Homework: a small text-processing task using strings and conditionals.
 
+This session introduces Python as a language with its own syntax and conventions, establishing the habits of readable, consistent code before any complexity is added.
+<!--more-->
+ It then turns to variables and objects: a name refers to an object, every object has a type, and that type determines which operations are meaningful. Working through the core scalar types, students see why some combinations of values work and others raise errors, why explicit conversion is preferable to relying on implicit behavior, and where the common early pitfalls lie in numeric precision and in values that only appear to be what they seem. Comparison and boolean logic follow as the means of expressing a decision, leading to branching as a control structure in which exactly one path runs and ordering carries meaning.
+
+The practical half builds outward from small, self-contained tasks toward larger programs assembled from reusable pieces. Students work with text and numeric data, format output for readability, and treat errors and tracebacks as information to be read rather than failures to be avoided. Conditional logic is developed incrementally, tracing how a given input moves through a program, and short working fragments are then combined so that composition becomes visible early. The session closes with a hands-on exercise in which students apply each of these aspects together on simple inputs, including cases that are empty or malformed.
+
+{{<figure src="imgs/Core_Programming_Tools_for_Data.png" 
+    alt="Figure: Infrographic that summarizes the content of this session" >}}
+
+## Listen
+
+{{< podcast src="https://insight-gsu-edu-msa8700-public-files-us-east-1.s3.us-east-1.amazonaws.com/podcast/python_programming_blueprints_for_graduate_researchers.m4a" title="Python Programming Blueprints" >}}
+
+
+## Read
+- [Wes McKinney: Python for Data Analysis: Chapter 2](https://wesmckinney.com/book/python-basics)
+- [Wes McKinney: Python for Data Analysis: Chapter 3](https://wesmckinney.com/book/python-builtin)
+
+## Hands-on
+The follow
+
+
+## References
+- [The Python Language Reference](https://docs.python.org/3.12/reference/index.html)
+- [The Python Standard Library](https://docs.python.org/3.12/library/index.html#library-index)
+- [Built-in Functions](https://docs.python.org/3.12/library/functions.html)
+- [Built-in Types](https://docs.python.org/3.12/library/stdtypes.html)
+- [Common string operations](https://docs.python.org/3.12/library/string.html)
+- [File and Directory Access](https://docs.python.org/3.12/library/filesys.html)
