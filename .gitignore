@@ -189,3 +189,7 @@ private/
 # rules above must not swallow it, or the slideshow breaks once deployed.
 !www/themes/reveal-hugo/static/reveal-js/dist/
 !www/themes/reveal-hugo/assets/reveal-js/dist/
+
+
+# special files
+02-Types-Strings-Conditionals/data/
