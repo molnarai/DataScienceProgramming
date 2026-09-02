@@ -39,3 +39,55 @@ Notebooks in [02-Types-Strings-Conditionals](https://github.com/molnarai/DataSci
 - [Built-in Types](https://docs.python.org/3.12/library/stdtypes.html)
 - [Common string operations](https://docs.python.org/3.12/library/string.html)
 - [File and Directory Access](https://docs.python.org/3.12/library/filesys.html)
+
+## Special CLI Commands
+
+You find special commands the cluster's (ARC) command line interface (CLI). You can type them in the terminal.
+
+> **DO NOT TYPE `$`**
+(It's shown to indicate that you enter the command after the promopt, usually `$`)
+
+### Activate Python Environment
+```bash
+$ source conda-env
+```
+WHile notebooks have an option to select your Python environment, running Python programs from the CLI rquires you to set an environment in the shell.
+
+### Download Class Examples
+On the command line, navigate to the directory where you want to download the examples. Then type
+
+```bash
+$ ifi8460-download
+```
+
+Then enter the number of the session.
+
+To get help:
+
+```bash
+$ ifi8460-download --help 
+ifi8460-download -- download an IFI8460 session folder from GitHub.
+
+Usage:
+  ifi8460-download [OPTIONS] [SESSION]
+
+SESSION may be given as a number (1 or 01) or as the full folder name
+(01-Intro-Unix).  Without SESSION the available sessions are listed and one is
+asked for interactively; q or exit quits.
+
+Options:
+  -l, --list           List the available sessions and exit
+  -n, --dry-run        Show what would be downloaded; change nothing
+  -q, --quiet          Report only changed files
+  -h, --help           Show this help and exit
+
+Environment:
+  GITHUB_TOKEN         Used for API calls if set; raises the GitHub rate limit
+  IFI8460_REPO_OWNER   Repository owner   (default: molnarai)
+  IFI8460_REPO_NAME    Repository name    (default: DataScienceProgramming)
+  IFI8460_REPO_REF     Branch or tag      (default: main)
+
+The session is written to ./<folder> under the current working directory.  An
+existing local file that differs from the remote copy is renamed to
+<file>.ifi8460-local-<timestamp> before it is replaced.
+```
