@@ -2,7 +2,7 @@
 ---
 draft: false
 title: Version Control with GIT
-weight: 10
+weight: 30
 description: A foundational guide for data science teams using Git and GitLab to manage their programming projects.
 date: 2024-01-01
 lastmod: 2024-01-01

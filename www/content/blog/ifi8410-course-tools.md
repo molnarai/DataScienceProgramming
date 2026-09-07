@@ -1,7 +1,7 @@
 ---
 draft: false
 title: IFI-8410 Course Tools
-weight: 5
+weight: 20
 description: Command Line (CLI) tools for manage class content and submissions.
 date: 2026-09-07
 lastmod: 2026-09-07

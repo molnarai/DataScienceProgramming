@@ -11,7 +11,7 @@
         </div>
         {{ end }}
     </article>
-    {{ range .Pages.ByDate }}
+    {{ range .Pages.ByWeight }}
     <article class="resource-item">
         <h2 class="listing-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
         {{ if .Params.due_date }}

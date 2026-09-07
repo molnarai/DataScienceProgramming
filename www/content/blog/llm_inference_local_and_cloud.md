@@ -3,7 +3,7 @@ title: "Ollama LLM Inference Local and Cloud"
 description: "How to run large language models locally and in the cloud with Ollama"
 date: 2026-01-24
 lastmod: 2026-01-24
-weight: 7
+weight: 60
 ---
 Ollama is a tool designed to host large language models (LLMs) locally on macOS, Linux, and Windows systems, offering OpenAI-compatible APIs for seamless integration with existing applications. By running models locally, Ollama eliminates the need for cloud-based services, ensuring privacy and reducing costs.
 <!-- more -->

@@ -2,7 +2,7 @@
 ---
 draft: false
 title: Docker Desktop - Zero to Hero
-weight: 15
+weight: 50
 description: How to install docker desktop on your Windows or macOS computer
 date: 2024-01-01
 lastmod: 2024-01-01

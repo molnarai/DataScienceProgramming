@@ -1,7 +1,7 @@
 ---
 draft: false
 title: Mastering Secure Shell is Key
-weight: 15
+weight: 40
 description: Tutorial on setting up SSH keys 
 date: 2024-01-01
 lastmod: 2024-01-01
