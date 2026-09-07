@@ -7,6 +7,8 @@ date: 2026-09-07
 lastmod: 2026-09-07
 ---
 # IFI8410 — Using the course commands
+Command Line (CLI) tools for manage class content and submissions.
+<!--more-->
 
 *A guide for students. No prior experience with Git or the command line is
 assumed. Everything here is typed into a terminal on the course server.*
