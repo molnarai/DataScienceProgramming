@@ -6,7 +6,7 @@ description: Command Line (CLI) tools for manage class content and submissions.
 date: 2026-09-07
 lastmod: 2026-09-07
 ---
-# IFI8410 — Using the course commands
+
 Command Line (CLI) tools for manage class content and submissions.
 <!--more-->
 
