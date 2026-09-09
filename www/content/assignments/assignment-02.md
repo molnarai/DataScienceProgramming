@@ -2,7 +2,7 @@
 date = '2026-09-09'
 due_date = '2026-09-22'
 draft = false
-title = 'Homework 2: Loops and Core Data Structures'
+title = 'Homework 2: Bike-Share Trip Analysis'
 weight = 20
 status = 'Scheduled'
 +++
@@ -13,8 +13,6 @@ Session 3. Across eight test-driven phases you will count records by any field, 
 
 <!-- more -->
 
----
-# Homework 2: Bike-Share Trip Analysis
 
 **Posted:** September 9, 2026 &nbsp;&nbsp;|&nbsp;&nbsp; **Due:** Tuesday, September 22, 2026 at 23:59
 
