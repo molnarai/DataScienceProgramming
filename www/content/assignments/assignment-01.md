@@ -1,17 +1,16 @@
 +++
 date = '2026-09-02'
-due_date = '2026-09-15'
+due_date = '2026-09-15T23:59:00'
 draft = false
 title = 'Homework 1: Text Analysis of the 20 Newsgroups Corpus'
 weight = 10
-status = 'Scheduled'
+status = 'Posted'
 +++
 
 Build a complete command-line program that analyzes a corpus of newsgroup messages using nothing but core Python — no machine learning libraries, no regular expressions. Across ten test-driven phases you will read and tokenize text files, score each article for sentiment against the AFINN-111 lexicon, count terms with nested dictionaries, and rank the most distinctive keywords of each newsgroup by TF–IDF, then assemble everything into a single deterministic report. Every phase ships with its own tests, so you find out whether the piece you just wrote works before you build the next one on top of it.
 
 <!-- more -->
 
-**Posted:** September 2, 2026 &nbsp;&nbsp;|&nbsp;&nbsp; **Due:** Tuesday, September 15, 2026 at 23:59
 
 Related session: [Session 2 — Types, Strings, and Conditionals](../../topics/topic-02/)
 

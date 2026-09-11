@@ -3,12 +3,17 @@
     {{ partial "breadcrumbs.html" . }}
     <header class="assignment-header">
         <h1>{{ .Title }}</h1>
-        {{ if .Params.due_date }}
-        <div class="due-date">
-            <strong>Due Date:</strong> {{ .Params.due_date | time.Format "January 2, 2006" }}
-            {{- with .Params.status }}&nbsp;<strong>Status:</strong> {{ . | markdownify }}{{ end }}
+        <div class="assignment-meta">
+            {{- if not .Date.IsZero }}
+            <span class="posted-date"><strong>Posted:</strong> {{ .Date | time.Format "January 2, 2006" }}</span>
+            {{- end }}
+            {{- with .Params.due_date }}
+            <span class="due-date"><strong>Due:</strong> {{ partial "assignment-due.html" . }}</span>
+            {{- end }}
+            {{- with .Params.status }}
+            <span class="status"><strong>Status:</strong> {{ . | markdownify }}</span>
+            {{- end }}
         </div>
-        {{ end }}
     </header>
 
     <div class="assignment-content">

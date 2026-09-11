@@ -8,9 +8,30 @@ practice: "Function definitions, parameters and defaults, return values, docstri
 weight: 40
 numsession: 4
 ---
-## Concept
-Introduce the function as a named unit of behavior with an explicit contract: what it takes in, what it gives back, and the one job it is responsible for. Distinguish returning a value from printing one — a distinction beginners routinely conflate and which matters the moment code is tested automatically. Cover scope: names created inside a function are local and disappear when it returns, which is what makes a function safe to reuse; reliance on global state is what makes it fragile. Frame decomposition as a design activity rather than a cleanup step: given a larger task, identify the sub-steps that can be named, tested, and reasoned about separately. Discuss what makes a function good — a descriptive name, few parameters, no hidden side effects — and how a docstring records the contract for the next reader, including the author a week later.
+Decomposition is how a problem too large to hold in your head becomes a handful of steps you can name, write, and check one at a time. In Python those steps are functions: each one a contract with a single responsibility and clear expectations about its inputs, its return value, and its edge cases.
+<!--more-->
+The same discipline is what lets the pieces fit back together. Returning a value instead of printing keeps a function usable by a test or by the next stage of a pipeline; local names and no shared global state keep one piece from quietly breaking another. Docstrings, type hints, and a little input validation record what each unit promises — so a program assembled from small, isolated parts stays something you can read, test, and change.
 
-## Practice
-Define functions with positional and default parameters, return single and multiple values, and write docstrings that state purpose, parameters, and return value. Trace what happens to local variables across calls and demonstrate the classic surprises: shadowing a global name, mutating a list passed as an argument, and forgetting a `return` so the function yields `None`. Introduce simple testing with `assert` and a handful of representative cases including an edge case, connecting directly to how the autograder will evaluate submissions. In-class activity: students take a block of repetitive code from an earlier session and refactor it into functions, verifying the behavior is unchanged. Homework: implement several small functions and pass an autograder test suite.
+{{<figure src="imgs/Programming_Function_Coding_Contract.png"  alt="Figure: Infographic about Functions" >}}
+
+## Listen
+
+{{< podcast src="https://insight-gsu-edu-msa8700-public-files-us-east-1.s3.us-east-1.amazonaws.com/podcast/predictable_python_function_design_for_data.m4a" title="Overview of Session" >}}
+
+
+{{< podcast src="https://insight-gsu-edu-msa8700-public-files-us-east-1.s3.us-east-1.amazonaws.com/podcast/how_decomposition_cures_project_paralysis.m4a" title="How Decomposition Cures Project Paralysis" >}}
+
+
+{{< podcast src="https://insight-gsu-edu-msa8700-public-files-us-east-1.s3.us-east-1.amazonaws.com/podcast/python_functions_as_legally_binding_contracts.m4a" title="Python Functions as Legally Binding Contracts" >}}
+
+## Read
+
+- [Decomposition: Breaking a Large Problem into Smaller Pieces](../blog/decomposition/) (source document for podcast )
+- [Wes McKinney: Python for Data Analysis: Chapter 2](https://wesmckinney.com/book/python-basics)
+- [Wes McKinney: Python for Data Analysis: Chapter 3](https://wesmckinney.com/book/python-builtin)
+
+## Hands-on
+
+Notebooks in [04-Functions-Decomposition](https://github.com/molnarai/DataScienceProgramming/tree/main/04-Functions-Decomposition)
+
 

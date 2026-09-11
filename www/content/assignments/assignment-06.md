@@ -1,6 +1,6 @@
 +++
 date = '2026-10-07'
-due_date = '2026-10-20'
+due_date = '2026-10-20T23:59:00'
 draft = false
 title = 'Homework 6: Git and Reproducible Workflow'
 weight = 60
@@ -11,9 +11,6 @@ Put your course work under version control and build a readable history. You wil
 
 <!-- more -->
 
----
-
-**Posted:** October 7, 2026 &nbsp;&nbsp;|&nbsp;&nbsp; **Due:** Tuesday, October 20, 2026 at 23:59
 
 Related session: [Session 7 — Git and Reproducible Workflow](../../topics/topic-07/)
 

@@ -1,19 +1,15 @@
 +++
 date = '2026-09-16'
-due_date = '2026-09-29'
+due_date = '2026-09-29T23:59:00'
 draft = false
 title = 'Homework 3: Functions and Decomposition'
 weight = 30
-status = 'Scheduled'
+status = 'Posted'
 +++
-
 Turn repetitive code into a small set of well-named functions, each with a clear contract: defined inputs, a return value, and a single responsibility. You will document your functions with docstrings and verify their behavior with simple `assert` tests, practicing decomposition as a deliberate design activity rather than an afterthought.
 
 <!-- more -->
 
----
-
-**Posted:** September 16, 2026 &nbsp;&nbsp;|&nbsp;&nbsp; **Due:** Tuesday, September 29, 2026 at 23:59
 
 Related session: [Session 4 — Functions and Decomposition](../../topics/topic-04/)
 

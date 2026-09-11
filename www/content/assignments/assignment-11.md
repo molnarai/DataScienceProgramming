@@ -1,19 +1,15 @@
 +++
 date = '2026-11-11'
-due_date = '2026-11-24'
+due_date = '2026-11-24T23:59:00'
 draft = false
 title = 'Homework 11: Graphs and Shortest Path'
 weight = 110
 status = 'Scheduled'
 +++
-
 Model a set of relationships as a graph and find your way through it. You will represent nodes and edges with dictionaries, traverse neighbors, implement breadth-first search with a queue, and reconstruct the shortest path between two points — the core machinery behind routing, recommendation, and network analysis.
 
 <!-- more -->
 
----
-
-**Posted:** November 11, 2026 &nbsp;&nbsp;|&nbsp;&nbsp; **Due:** Tuesday, November 24, 2026 at 23:59
 
 Related session: [Session 12 — Graphs and Shortest Path](../../topics/topic-12/)
 

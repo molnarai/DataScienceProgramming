@@ -1,10 +1,10 @@
 +++
 date = '2026-09-09'
-due_date = '2026-09-22'
+due_date = '2026-09-22T23:59:00'
 draft = false
 title = 'Homework 2: Bike-Share Trip Analysis'
 weight = 20
-status = 'Scheduled'
+status = 'Posted'
 +++
 
 Analyze a month of campus bike-share trips using nothing but core Python — no pandas, no NumPy, no file reading, just a list of dictionaries and the loop patterns from 
@@ -14,7 +14,6 @@ Session 3. Across eight test-driven phases you will count records by any field, 
 <!-- more -->
 
 
-**Posted:** September 9, 2026 &nbsp;&nbsp;|&nbsp;&nbsp; **Due:** Tuesday, September 22, 2026 at 23:59
 
 Related session: [Session 3 — Loops and Core Data Structures](../../topics/topic-03/)
 

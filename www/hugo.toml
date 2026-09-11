@@ -10,7 +10,7 @@ buildFuture = true
     ID = "G-76SMSN09P2"
 
 [Params]
-  description = "IFI 8410 - Introduction to Programming and Predictive Analytics for Business"
+  description = "IFI 8410: a first course in Python programming for business analytics — core Python, the Unix command line and Git, pandas and visualization, and an introduction to machine learning, applied to a term-long retail analytics project."
   images = ['/digital-garden-logo.png']
   enableSearch = true
 

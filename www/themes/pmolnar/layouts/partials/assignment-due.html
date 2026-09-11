@@ -1,0 +1,7 @@
+{{- /* Renders a due date as "Tuesday, September 29, 2026 at 23:59".
+       Takes the raw due_date param; falls back to 23:59 when the value
+       carries no time of day. */ -}}
+{{- $due := . | time.AsTime -}}
+{{- $clock := $due.Format "15:04" -}}
+{{- if eq $clock "00:00" }}{{ $clock = "23:59" }}{{ end -}}
+{{- printf "%s at %s" ($due.Format "Monday, January 2, 2006") $clock -}}

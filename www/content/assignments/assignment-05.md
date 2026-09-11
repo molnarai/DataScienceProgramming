@@ -1,6 +1,6 @@
 +++
 date = '2026-09-30'
-due_date = '2026-10-13'
+due_date = '2026-10-13T23:59:00'
 draft = false
 title = 'Homework 5: Unix File System and Command Line'
 weight = 50
@@ -11,9 +11,6 @@ Work directly in the shell to navigate and reorganize a directory tree, then run
 
 <!-- more -->
 
----
-
-**Posted:** September 30, 2026 &nbsp;&nbsp;|&nbsp;&nbsp; **Due:** Tuesday, October 13, 2026 at 23:59
 
 Related session: [Session 6 — Unix File System and Command Line](../../topics/topic-06/)
 

@@ -1,6 +1,6 @@
 +++
 date = '2026-10-14'
-due_date = '2026-10-27'
+due_date = '2026-10-27T23:59:00'
 draft = false
 title = 'Homework 7: Python for Data Analysis'
 weight = 70
@@ -11,9 +11,6 @@ Analyze a real dataset with NumPy and Pandas, treating the table as a first-clas
 
 <!-- more -->
 
----
-
-**Posted:** October 14, 2026 &nbsp;&nbsp;|&nbsp;&nbsp; **Due:** Tuesday, October 27, 2026 at 23:59
 
 Related session: [Session 8 — Python for Data Analysis](../../topics/topic-08/)
 

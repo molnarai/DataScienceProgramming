@@ -1,19 +1,15 @@
 +++
 date = '2026-09-23'
-due_date = '2026-10-06'
+due_date = '2026-10-06T23:59:00'
 draft = false
 title = 'Homework 4: Files, Modules, and Scripts'
 weight = 40
 status = 'Scheduled'
 +++
-
 Move your work out of the notebook and into a runnable program. You will read and write text and CSV files using `with` blocks, reason about paths and the working directory, organize code into importable modules, and package the result as a self-contained script guarded by `if __name__ == "__main__"`.
 
 <!-- more -->
 
----
-
-**Posted:** September 23, 2026 &nbsp;&nbsp;|&nbsp;&nbsp; **Due:** Tuesday, October 6, 2026 at 23:59
 
 Related session: [Session 5 — Files, Modules, and Scripts](../../topics/topic-05/)
 

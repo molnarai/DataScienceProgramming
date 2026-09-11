@@ -2,7 +2,16 @@
 title: Homepage
 extended_title: 'IFI 8410: Introduction to Programming and Predictive Analytics for Business'
 layout: home
-description: 'This course introduces students to '
+description: >-
+  IFI 8410 is a first course in programming for business analytics, and assumes
+  no prior experience. It builds from core Python — types, control flow,
+  containers, functions, and files — through the working environment real
+  analysis depends on, the Unix command line, Git, and reproducible scripts, to
+  data work itself: NumPy and pandas, descriptive statistics and visualization,
+  simulation, search and graph algorithms, and a first supervised
+  machine-learning model. Weekly individual assignments build the skills, and a
+  term project applies them end to end to a retail analytics problem on the
+  university's Analytics Research Cluster.
 jumbotron: "../imgs/The_Analytics_Launchpad_Training_Foundation.png"
 podcasturl: 'https://insight-gsu-edu-msa8700-public-files-us-east-1.s3.us-east-1.amazonaws.com/podcast/ifi8410_python_git_and_unix_for_ai.m4a'
 ---
