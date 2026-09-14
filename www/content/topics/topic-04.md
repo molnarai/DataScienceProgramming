@@ -26,7 +26,7 @@ The same discipline is what lets the pieces fit back together. Returning a value
 
 ## Read
 
-- [Decomposition: Breaking a Large Problem into Smaller Pieces](../blog/decomposition/) (source document for podcast )
+- [Decomposition: Breaking a Large Problem into Smaller Pieces](../../blog/decomposition/) (source document for podcast )
 - [Wes McKinney: Python for Data Analysis: Chapter 2](https://wesmckinney.com/book/python-basics)
 - [Wes McKinney: Python for Data Analysis: Chapter 3](https://wesmckinney.com/book/python-builtin)
 

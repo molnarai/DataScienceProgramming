@@ -26,8 +26,8 @@ title="Deep Dive" >}}
 
 ## Read
 
-- [Reading and Writing Files](../blog/reading-writing-files/) (source document for podcast )
-- [Python Modules and Self-Standing Scripts](../blog/python-modules-scripts/) (source document for podcast )
+- [Reading and Writing Files](../../blog/reading-writing-files/) (source document for podcast )
+- [Python Modules and Self-Standing Scripts](../../blog/python-modules-scripts/) (source document for podcast )
 - [Wes McKinney: Python for Data Analysis: Chapter 3](https://wesmckinney.com/book/python-builtin)
 
 ## Hands-on
