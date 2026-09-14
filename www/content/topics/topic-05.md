@@ -8,9 +8,30 @@ practice: "Reading and writing text and CSV files; `with` blocks; imports; `if _
 weight: 50
 numsession: 5
 ---
-## Concept
-Motivate persistence: a notebook loses its state, but a file outlives the session, which is what allows one program's output to become another's input. Develop a precise model of file paths — absolute versus relative, and the working directory that relative paths resolve against — since "file not found" is the most common error at this stage and is almost always a path problem rather than a code problem. Introduce text files as sequences of lines and CSV as a text convention with delimiters and a header row, along with the ambiguities that convention leaves open (quoting, embedded commas, encodings, missing fields). Explain modules and namespaces: importing binds names from another file, which is how code becomes reusable across programs. Close on the distinction between a file that is imported and a file that is run, and why a program needs a defined entry point.
+A file outlives the session that created it, which is what allows one program's output to become another's input. Safe file handling rests on a few habits: a `with` block that closes the file whatever happens, an explicit UTF-8 encoding, input and output locations that are named rather than assumed, and a read-back of anything written. Which format to write in depends on the shape of the data. CSV suits simple rectangular tables and moves easily between spreadsheets and programs, at the cost of careful handling of headers, quoting, embedded commas, missing fields, and the conversion of every value from text. JSON carries structured documents — nested objects and lists, numbers, booleans, and null — which makes it a fit for configuration, metadata, API payloads, and records that are not flat. JSONL puts one complete JSON record on each line, so large collections of independent records such as logs, events, and model outputs can be appended and processed one record at a time.
+<!--more-->
+Code becomes reusable once it is divided along its responsibilities — reading, validating, transforming, analyzing, writing — and those functions are gathered into modules that other programs import. A script needs one explicit entry point: a `main()` function behind an `if __name__ == "__main__":` guard, so the same file can be imported without side effects or run directly from the terminal. What these conventions share is that they make a program's inputs, assumptions, transformations, outputs, and execution steps visible rather than implicit, which is what allows an analysis to be repeated and checked by someone other than its author.
 
-## Practice
-Read and write text files using `with open(...)` blocks, and explain why the context manager is preferable to manual `close`. Process a file line by line, strip newlines, and handle a header row; then do the same work with the `csv` module and compare. Write output files and verify results by reading them back. Demonstrate importing from the standard library and from a local helper module in the same directory. Introduce the `if __name__ == "__main__"` guard and run the resulting program from the terminal with `python script.py`, previewing the command-line work of the next session. In-class activity: students convert working notebook logic into a self-contained script with functions and a main block. Homework: a file-processing assignment that reads input, produces output, and reports basic results.
+{{<figure src="imgs/Programming_File_Handling_Guide.png"  alt="Figure: Infographic about Files and Modules" >}}
+
+## Listen
+
+{{< podcast src="https://insight-gsu-edu-msa8700-public-files-us-east-1.s3.us-east-1.amazonaws.com/podcast/from_notebooks_to_reproducible_python_scripts.m4a" title="Overview" >}}
+
+{{< podcast src="https://insight-gsu-edu-msa8700-public-files-us-east-1.s3.us-east-1.amazonaws.com/podcast/from_jupyter_notebooks_to_production_python.m4a"
+title="Deep Dive" >}}
+
+
+
+
+## Read
+
+- [Reading and Writing Files](../blog/reading-writing-files/) (source document for podcast )
+- [Python Modules and Self-Standing Scripts](../blog/python-modules-scripts/) (source document for podcast )
+- [Wes McKinney: Python for Data Analysis: Chapter 3](https://wesmckinney.com/book/python-builtin)
+
+## Hands-on
+
+Notebooks in [05-Files-Modules-Scripts](https://github.com/molnarai/DataScienceProgramming/tree/main/05-Files-Modules-Scripts)
+
 
