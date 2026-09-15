@@ -47,14 +47,14 @@ buildFuture = true
   name = 'Blog'
   url = '/blog'
   weight = 7
-# [[menu.main]]
-#  name = 'Wiki'
-#  url = '/wiki'
-#  weight = 7
+[[menu.main]]
+ name = 'LiveSynthesis'
+ url = '/blog/live-synthesis/'
+ weight = 8
 [[menu.main]]
   name = 'GitHub'
   url = 'https://github.com/molnarai/DataScienceProgramming'
-  weight = 8
+  weight = 9
   # Custom menu data must be nested under `params` —
   # Hugo silently discards unknown top-level keys on a menu entry.
   [menu.main.params]
