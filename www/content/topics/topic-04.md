@@ -24,9 +24,15 @@ The same discipline is what lets the pieces fit back together. Returning a value
 
 {{< podcast src="https://insight-gsu-edu-msa8700-public-files-us-east-1.s3.us-east-1.amazonaws.com/podcast/python_functions_as_legally_binding_contracts.m4a" title="Python Functions as Legally Binding Contracts" >}}
 
+## Presentation
+
+- [Decomposition](../../slides/slide-04-1-decomposition/) - Breaking a large problem into smaller pieces: tasks, steps, and the four payoffs of clarity, reuse, checking, and collaboration
+- [Functions as Decomposition](../../slides/slide-04-2-python-functions-scripts/) - How the four payoffs of decomposition become Python function design
+
 ## Read
 
-- [Decomposition: Breaking a Large Problem into Smaller Pieces](../../blog/decomposition/) (source document for podcast )
+- [Decomposition: Breaking a Large Problem into Smaller Pieces](../../blog/decomposition/) (source document for podcast)
+- [Python Modules and Self-Standing Scripts](../../blog/python-modules-scripts/) (source document for podcast)
 - [Wes McKinney: Python for Data Analysis: Chapter 2](https://wesmckinney.com/book/python-basics)
 - [Wes McKinney: Python for Data Analysis: Chapter 3](https://wesmckinney.com/book/python-builtin)
 
