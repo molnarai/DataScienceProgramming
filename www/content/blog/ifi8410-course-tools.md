@@ -447,3 +447,26 @@ description.
 None of these commands deletes your work, rewrites your history, or discards a
 file you have edited. If something looks alarming, stop and ask — nothing is
 lost.
+
+## 14. Working on Your Personal Computer
+
+> You can clone your Git repository on your personal computer. However, the course tools are not available and > your must use the `git` command.
+
+**You must keep each cloned version updated!**
+
+If you maintain multiple cloned copies on different systems, you must keep them in sync with your Git repository in order to receive new updates.
+
+On your laptop, use a plain `git pull`, after first committing your own changes. The release lands on the work branch on GitLab, so pulling that branch is all it takes:
+
+```bash
+git switch work                      # the branch releases go to
+git add -A
+git commit -m "my work"              # commit first, or the pull can refuse to run
+git pull --no-rebase origin work
+git push origin work                 # so GitLab and your cluster clone get your work too
+```
+
+- `--no-rebase` makes the pull a merge, which is what `ifi8410-update` does. Some laptops are set up to rebase on pull by default, and a rebase rewrites your commits.
+- Check it worked: `ls .course/release-notices/` should show the latest version
+- If Git reports a conflict: you edited a file that the release also changed. You can fix the files and commit with `git add -A && git commit`, or back out with `git merge --abort`. Notebook conflicts are painful to fix by hand. The easier route is to abort, push your work, and run `ifi8410-update` on the cluster, which handles that case.
+- Before switching machines: always push from one before pulling on the other. Otherwise the same file can change in both places and conflict.
