@@ -1,6 +1,6 @@
 +++
 date = '2026-10-21'
-due_date = '2026-11-03T23:59:00'
+due_date = '2026-11-04T23:59:00'
 draft = false
 title = 'Homework 8: Visualization and Descriptive Statistics'
 weight = 80

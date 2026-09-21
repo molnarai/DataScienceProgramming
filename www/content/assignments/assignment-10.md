@@ -1,6 +1,6 @@
 +++
 date = '2026-11-04'
-due_date = '2026-11-17T23:59:00'
+due_date = '2026-11-18T23:59:00'
 draft = false
 title = 'Homework 10: Search and Hashing'
 weight = 100

@@ -1,6 +1,6 @@
 +++
 date = '2026-09-16'
-due_date = '2026-09-29T23:59:00'
+due_date = '2026-09-30T23:59:00'
 draft = false
 title = 'Homework 3: Ranking Scholarship Applications'
 weight = 30

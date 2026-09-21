@@ -1,7 +1,7 @@
 ---
 draft: false
 title: "Decomposition: Breaking a Large Problem into Smaller Pieces"
-weight: 30
+weight: 25
 description: >-
   Decomposition is the process of taking a large goal and dividing it into
   smaller, understandable tasks and steps. It does not make the goal less

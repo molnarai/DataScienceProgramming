@@ -1,4 +1,3 @@
-
 ---
 draft: false
 title: Docker Desktop - Zero to Hero

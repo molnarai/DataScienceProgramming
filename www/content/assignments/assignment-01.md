@@ -1,6 +1,6 @@
 +++
 date = '2026-09-02'
-due_date = '2026-09-15T23:59:00'
+due_date = '2026-09-16T23:59:00'
 draft = false
 title = 'Homework 1: Text Analysis of the 20 Newsgroups Corpus'
 weight = 10

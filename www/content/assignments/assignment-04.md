@@ -1,6 +1,6 @@
 +++
 date = '2026-09-23'
-due_date = '2026-10-06T23:59:00'
+due_date = '2026-10-07T23:59:00'
 draft = false
 title = 'Homework 4: A Pipeline Through Five Gigabytes of Reviews'
 weight = 40

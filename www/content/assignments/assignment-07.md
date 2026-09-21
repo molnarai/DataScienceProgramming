@@ -1,6 +1,6 @@
 +++
 date = '2026-10-14'
-due_date = '2026-10-27T23:59:00'
+due_date = '2026-10-28T23:59:00'
 draft = false
 title = 'Homework 7: Python for Data Analysis'
 weight = 70

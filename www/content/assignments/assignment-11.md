@@ -1,6 +1,6 @@
 +++
 date = '2026-11-11'
-due_date = '2026-11-24T23:59:00'
+due_date = '2026-11-25T23:59:00'
 draft = false
 title = 'Homework 11: Graphs and Shortest Path'
 weight = 110

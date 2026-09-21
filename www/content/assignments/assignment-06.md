@@ -1,6 +1,6 @@
 +++
 date = '2026-10-07'
-due_date = '2026-10-20T23:59:00'
+due_date = '2026-10-21T23:59:00'
 draft = false
 title = 'Homework 6: Git and Reproducible Workflow'
 weight = 60

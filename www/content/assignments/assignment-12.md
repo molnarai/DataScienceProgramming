@@ -1,6 +1,6 @@
 +++
 date = '2026-11-18'
-due_date = '2026-12-01T23:59:00'
+due_date = '2026-12-02T23:59:00'
 draft = false
 title = 'Homework 12: Introductory Machine Learning'
 weight = 120

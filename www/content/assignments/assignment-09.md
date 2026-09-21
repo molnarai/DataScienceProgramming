@@ -1,6 +1,6 @@
 +++
 date = '2026-10-28'
-due_date = '2026-11-10T23:59:00'
+due_date = '2026-11-11T23:59:00'
 draft = false
 title = 'Homework 9: Simulation and Randomness'
 weight = 90
