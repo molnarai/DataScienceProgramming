@@ -66,10 +66,13 @@
       {{ $attrName | safeHTMLAttr }}="{{ $value }}"
     {{- end -}}
     {{- end -}}
-  {{- end -}}>
-  {{- if $contentImage }}
-  <div class="content-image" style="background-image:url('{{ $contentImage }}');"></div>
-  {{- end }}
+  {{- end -}}
+  {{- /* content-image renders as a reveal.js slide background sized to
+         "contain" so the whole image is visible. Using the native background
+         mechanism (rather than a separate full-viewport layer) means it also
+         shows correctly in overview mode and in ?print-pdf. */ -}}
+  {{- if $contentImage }} data-background-image="{{ $contentImage }}" data-background-size="contain"{{ end -}}
+>
   {{ $svalue | safeHTML }}
 {{- if ne $sindex (sub (len ($scratch.Get "slides")) 1) -}}
 </section>
