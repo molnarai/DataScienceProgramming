@@ -2,7 +2,7 @@
 date: 2026-10-07
 classdates: '2026-10-07'
 draft: false
-title: 'Git and Reproducible Workflow'
+title: 'Data Tables'
 concept: "Why version control exists: history, recovery, and accountable authorship. Commits as snapshots; the working tree, staging area, and repository. Local versus remote."
 practice: "`git status`, `git add`, `git commit`, `git log`, `git diff`; `.gitignore`; remotes, push and pull; meaningful commit messages. In-class: create a repository and inspect its history."
 weight: 70

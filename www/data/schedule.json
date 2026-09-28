@@ -78,7 +78,7 @@
       "DateNumeric": "2026-10-07",
       "Date": "2026-10-07",
       "Comment": "",
-      "Topic": "Git and Reproducible Workflow",
+      "Topic": "Data Tables",
       "InClass": "ACT07",
       "Assignment": "HW06",
       "Concept": "Why version control exists: history, recovery, and accountable authorship. Commits as snapshots; the working tree, staging area, and repository. Local versus remote.",

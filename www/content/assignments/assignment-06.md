@@ -2,7 +2,7 @@
 date = '2026-10-07'
 due_date = '2026-10-21T23:59:00'
 draft = false
-title = 'Homework 6: Git and Reproducible Workflow'
+title = 'Homework 6: Data Tables'
 weight = 60
 status = 'Scheduled'
 +++
@@ -12,7 +12,7 @@ Put your course work under version control and build a readable history. You wil
 <!-- more -->
 
 
-Related session: [Session 7 — Git and Reproducible Workflow](../../topics/topic-07/)
+Related session: [Session 7 — Data Tables](../../topics/topic-07/)
 
 ### Topics Covered
 

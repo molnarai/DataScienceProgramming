@@ -1,4 +1,4 @@
-# Session 7: Git and Reproducible Workflow
+# Session 7: Data Tables
 
 Version control as a working habit rather than a chore. Students track their
 own changes, read a commit history, and use Git as the submission mechanism
