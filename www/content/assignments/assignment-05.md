@@ -4,7 +4,7 @@ due_date = '2026-10-14T23:59:00'
 draft = false
 title = 'Homework 5: A Query Engine Made of Pipes'
 weight = 50
-status = 'Scheduled'
+status = 'Posted'
 +++
 
 Answer one question about 863,077 US Forest Service records of invasive plants — which ones cover the most ground, and where — by building the machine that runs the SQL rather than writing the SQL. Across eight test-driven phases you will write a single Python file that becomes seven command-line tools, each reading CSV on stdin and writing CSV on stdout, then compose them into a pipeline with Unix pipes: filter, select, group-by, aggregate, order-by, head. Along the way you will parse CSV correctly including quoted fields with embedded commas and newlines, decide what a text field actually means and handle nulls the way SQL does, stream rows so memory does not grow with the file, sort by several keys in either direction, and compute count, sum, avg, min, and max for a group without ever holding the group's rows.

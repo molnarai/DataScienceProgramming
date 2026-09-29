@@ -4,7 +4,7 @@ due_date = '2026-10-07T23:59:00'
 draft = false
 title = 'Homework 4: A Pipeline Through Five Gigabytes of Reviews'
 weight = 40
-status = 'Scheduled'
+status = 'Posted'
 +++
 
 Find the restaurants Yelp reviewers disagreed about most in 2018 and 2019, working from the 5.3 GB review file on the cluster, which is far too large to load into memory. Across nine test-driven phases you will build a pipeline of stages in core Python, each reading the file the stage before it wrote, one record at a time. You will filter the business and review files, join reviews to a small lookup table, compute count, mean, and standard deviation for thousands of restaurants without storing the values, and sort a file of any size by reusing your HW03 merge sort on files. Finally you will run the whole pipeline from the command line and print a ranked report. Every phase is tested on a small sample of the dataset before you run it on the real thing.
