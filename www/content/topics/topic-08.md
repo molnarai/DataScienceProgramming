@@ -12,11 +12,12 @@ With pandas, most questions about a table are one line of code, and that line **
 <!--more-->
 Two ideas then carry the computing itself. **Vectorized thinking** says what happens to a whole column, not to each row: `amount = boxes * price` applies to every row at once, in compiled code, and reads like the sentence it implements. **Split, apply, combine** is the shape of every question with the word *per* in it, and `groupby` does all three steps; the skill is choosing between an aggregate, which shrinks the table to one row per group, and a transform, which keeps every row and puts the group's value beside it. Around both sits the habit the session is built on: inspect first — shape, types, a few rows, blanks, ranges, distinct values — clean with a short list of explicit rules that make a value missing but never delete a row silently, and report what was left out, with counts.
 
-TODO: marquee image
+{{<figure src="imgs/Rules_for_Trustworthy_Data_Analysis.png" alt="Figure: Infographic depicting data analysis methods" >}}
 
 ## Listen
 
-TODO: podcast
+{{< podcast src="https://insight-gsu-edu-msa8700-public-files-us-east-1.s3.us-east-1.amazonaws.com/podcast/why_clean_pandas_code_gives_wrong_answers.m4a" title="Python Data Analysis Fundamentals" >}}
+
 
 ## Presentation
 

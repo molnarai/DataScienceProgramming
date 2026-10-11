@@ -16,7 +16,8 @@ A picture shows what the numbers cannot. Anscombe's quartet is four small datase
 
 ## Listen
 
-TODO: podcast
+{{< podcast src="https://insight-gsu-edu-msa8700-public-files-us-east-1.s3.us-east-1.amazonaws.com/podcast/how_summary_statistics_misrepresent_data.m4a" title="Visualizing Data and Descriptive Statistics" >}}
+
 
 ## Presentation
 

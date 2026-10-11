@@ -16,7 +16,6 @@ With that foundation, the same table operations appear in both SQL and pandas: c
 
 ## Listen
 
-TODO: podcast based on the Tabular Data blog post
 {{< podcast src="https://insight-gsu-edu-msa8700-public-files-us-east-1.s3.us-east-1.amazonaws.com/podcast/relational_architecture_in_sql_and_pandas.m4a" title="Relational Architecture in SQL and Pandas" >}}
 
 
