@@ -8,9 +8,28 @@ practice: "NumPy arrays and Pandas DataFrames; loading and inspecting data; sele
 weight: 80
 numsession: 8
 ---
-## Concept
-Introduce the table — rows as observations, columns as variables — as the central data structure of analytics, and contrast it with the lists and dictionaries students have been assembling by hand. Explain vectorized thinking: expressing an operation over a whole column at once instead of looping over elements, which is both more readable and dramatically faster because the work happens in compiled code. Present split-apply-combine as the conceptual model behind grouped computation: partition rows by a key, compute a summary per group, and reassemble the results. Treat missing data as a substantive question rather than a technical nuisance — a blank cell may mean zero, unknown, or not applicable, and dropping versus filling changes what the resulting numbers mean. Close on the habit of inspecting a dataset (shape, types, ranges, missingness) before drawing any conclusion from it.
+With pandas, most questions about a table are one line of code, and that line **always returns a number**. It does not know whether the file had blank cells, whether a price was stored as the word `"None"`, whether a date of 1 January 1900 was real or a placeholder, or whether half of one group's records were missing. It computes anyway, and a wrong answer looks exactly like a right one. So data analysis is less about the computing line than about what comes before it: what one row stands for (the **grain**), what types the columns have, which values are wrong, disguised, or impossible, and what a blank means — zero, unknown, or not applicable. Those three readings can put an average a factor of two apart, and no error message raises the question for you.
+<!--more-->
+Two ideas then carry the computing itself. **Vectorized thinking** says what happens to a whole column, not to each row: `amount = boxes * price` applies to every row at once, in compiled code, and reads like the sentence it implements. **Split, apply, combine** is the shape of every question with the word *per* in it, and `groupby` does all three steps; the skill is choosing between an aggregate, which shrinks the table to one row per group, and a transform, which keeps every row and puts the group's value beside it. Around both sits the habit the session is built on: inspect first — shape, types, a few rows, blanks, ranges, distinct values — clean with a short list of explicit rules that make a value missing but never delete a row silently, and report what was left out, with counts.
 
-## Practice
-Introduce NumPy arrays and elementwise operations, then move to Pandas as the practical workhorse. Load a CSV into a DataFrame and inspect it with `head`, `shape`, `dtypes`, `info`, and `describe`, diagnosing columns that were read with the wrong type. Select columns and rows, filter with boolean masks and combined conditions, and create derived columns. Group with `groupby` and aggregate with counts, means, and multiple aggregations at once, then sort the result. Detect missing values with `isna` and compare `dropna` and `fillna` on the same question to show that the choice affects the answer. In-class activity: students explore a small real-world dataset and report several grouped summaries. Homework: conduct a basic exploratory data analysis in Python.
+TODO: marquee image
 
+## Listen
+
+TODO: podcast
+
+## Presentation
+
+TODO: presentation
+
+## Read
+
+- [Python for Data Analysis](../../blog/python-data-analysis/) (lecture notes)
+
+## Hands-on
+
+Notebooks in [08-Python-Data-Analysis](https://github.com/molnarai/DataScienceProgramming/tree/main/08-Python-Data-Analysis)
+
+## Homework
+
+- [Homework 7: Invasive Plants, from Raw File to Report](../../assignments/assignment-07/) — due Wednesday, October 28, 2026
