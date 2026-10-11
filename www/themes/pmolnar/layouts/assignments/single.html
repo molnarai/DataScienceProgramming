@@ -5,16 +5,23 @@
         <h1>{{ .Title }}</h1>
         <div class="assignment-meta">
             {{- if not .Date.IsZero }}
-            <span class="posted-date"><strong>Posted:</strong> {{ .Date | time.Format "January 2, 2006" }}</span>
+            <span class="posted-date"><strong>Release date:</strong> {{ .Date | time.Format "January 2, 2006" }}</span>
             {{- end }}
             {{- with .Params.due_date }}
             <span class="due-date"><strong>Due:</strong> {{ partial "assignment-due.html" . }}</span>
             {{- end }}
             {{- with .Params.status }}
-            <span class="status"><strong>Status:</strong> {{ . | markdownify }}</span>
+            <span class="status"><strong>Status:</strong> {{ partial "assignment-status.html" $ }}</span>
             {{- end }}
         </div>
     </header>
+    {{- if and (not .Date.IsZero) (.Date.After now) }}
+    <p class="assignment-notice" role="note">
+        <strong>Preview.</strong> This assignment may change before its official release date,
+        {{ .Date | time.Format "January 2, 2006" }}. Run <code>ifi8410-update</code> on or after
+        that date to make sure you are working from the final version.
+    </p>
+    {{- end }}
 
     <div class="assignment-content">
         {{ .Content }}

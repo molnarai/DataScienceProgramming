@@ -6,6 +6,11 @@ on:
       - main
       - pages
   workflow_dispatch:
+  # Daily rebuild of main, so date-dependent content (an assignment's
+  # "Preview" status and notice) changes on its release date without a push.
+  # 09:00 UTC is 05:00 EDT / 04:00 EST.
+  schedule:
+    - cron: '0 9 * * *'
 
 permissions:
   contents: read

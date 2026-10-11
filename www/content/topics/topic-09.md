@@ -12,7 +12,7 @@ Nobody can read ten thousand rows. To tell anyone what is in a table you have to
 <!--more-->
 A picture shows what the numbers cannot. Anscombe's quartet is four small datasets with the same means, the same standard deviations, and the same correlation that look nothing alike when drawn, which is why you always draw the data. The chart follows from the kind of question: a histogram for how values are spread out, bars for which group has more, a scatter plot for whether two things go together, a line for how something changed over time. In matplotlib a Figure is the whole picture and an Axes is one plot inside it, and functions that draw on an Axes they are given can be placed anywhere. A chart is honest when the eye gets the right numbers: bars start at zero, a logarithmic axis is announced, labels name the quantity and its unit, periods in a trend are complete, and the title says what to see. A figure without axis labels and units is not yet a result.
 
-TODO: marquee image
+{{<figure src="imgs/Describing_Data_Honestly_Guide.png" alt="Figure: Infographic depicting analysis and visualization techniques" >}}
 
 ## Listen
 
@@ -20,7 +20,7 @@ TODO: podcast
 
 ## Presentation
 
-TODO: presentation
+- [Visualization and Descriptive Statistics](../../slides/slide-09-visualization-descriptive-statistics/)
 
 ## Read
 

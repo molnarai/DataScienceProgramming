@@ -20,7 +20,7 @@ TODO: podcast
 
 ## Presentation
 
-TODO: presentation
+- [Simulation and Randomness](../../slides/slide-10-simulation-randomness/)
 
 ## Read
 

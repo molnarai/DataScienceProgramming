@@ -4,7 +4,7 @@ due_date = '2026-10-28T23:59:00'
 draft = false
 title = 'Homework 7: Invasive Plants, from Raw File to Report'
 weight = 70
-status = 'Scheduled'
+status = 'Posted'
 +++
 
 In HW05 you built a query engine for the Forest Service file of invasive plants, one row at a time. This week you meet the same 863,069 records again with pandas, where a question that took a pipeline takes a line — and a line of pandas will always give you a number, whether or not the number means anything. Across seven test-driven phases you will write a single program that inspects the raw table, cleans it (text into dates, missing values disguised as the word `Unknown`, values that cannot be true), computes whole columns at once with no loop, and summarises the records by forest, by species, and by year. The assignment turns on one column: half of the records have no `cover_pct`, and the average cover is 17.1 %, 8.5 %, or 18.4 % depending on what you decide a blank means.
@@ -45,9 +45,8 @@ number of rows each average was taken over.
 ### Instructions
 
 The full instructions, the starter file, and the per-phase tests are released
-through the course template after the October 14 session. Once they are
-out, run `ifi8410-update` on the course server, then read
-`Assignments/HW07/instructions/homework07_instructions.md` and work in
+through the course template. On the course server run `ifi8410-update`, then
+read `Assignments/HW07/instructions/homework07_instructions.md` and work in
 `Assignments/HW07/submission/`.
 
 The real file is already on the cluster under

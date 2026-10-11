@@ -24,7 +24,7 @@
                     <tr>
                         <td><a href="{{ .RelPermalink }}">{{ .Title }}</a></td>
                         <td>{{ with .Params.due_date }}{{ partial "assignment-due.html" . }}{{ end }}</td>
-                        <td>{{ .Params.status | markdownify }}</td>
+                        <td>{{ partial "assignment-status.html" . }}</td>
                     </tr>
                 {{ end }}
             </tbody>
@@ -36,10 +36,11 @@
     {{ range .Pages.ByWeight }}
     <article class="assignment-item">
         <h2 class="listing-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+        {{ $page := . }}
         {{ with .Params.due_date }}
             <div class="due-date">
                 Due: {{ partial "assignment-due.html" . }}
-                {{- with $.Params.status }} ({{ . | markdownify }}){{ end }}
+                {{- with $page.Params.status }} ({{ partial "assignment-status.html" $page }}){{ end }}
             </div>
         {{ end }}
         {{ with .Content }}

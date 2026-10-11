@@ -4,7 +4,7 @@ due_date = '2026-11-25T23:59:00'
 draft = false
 title = 'Homework 11: Fewest Hops'
 weight = 110
-status = 'Scheduled'
+status = 'Posted'
 +++
 
 You are in Atlanta and want to get to Sydney, and there is no direct flight. A booking site answers in a second; how did it find that among 37,041 routes between 3,257 airports? A table has rows, but this data has connections, and the question is about following them. Across seven test-driven phases you will read a file of airline routes into an edge list, build a graph as a dictionary of dictionaries, and find the fewest flights between any two airports with a search that spreads outward from the start one flight at a time. Then you will reconstruct the route itself, find which airports hang together at all, and discover that the route with the fewest flights from Atlanta to Sydney goes the wrong way round the planet, 9,066 km longer than another with just as many flights.
@@ -45,9 +45,8 @@ route with the fewest kilometres.
 ### Instructions
 
 The full instructions, the starter file, and the per-phase tests are released
-through the course template after the November 11 session. Once they are
-out, run `ifi8410-update` on the course server, then read
-`Assignments/HW11/instructions/homework11_instructions.md` and work in
+through the course template. On the course server run `ifi8410-update`, then
+read `Assignments/HW11/instructions/homework11_instructions.md` and work in
 `Assignments/HW11/submission/`.
 
 The real file is already on the cluster at `/data/public/openflights/routes.csv`

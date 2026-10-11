@@ -4,7 +4,7 @@ due_date = '2026-11-18T23:59:00'
 draft = false
 title = 'Homework 10: Three Ways to Find It'
 weight = 100
-status = 'Scheduled'
+status = 'Posted'
 +++
 
 Almost every program you have written this term looks something up: `if word in words`, `businesses[business_id]`. This week you build what is inside, three times, and count the work each way takes. On 100,000 Yelp business ids, looking at every item costs about 50,000 comparisons per lookup, halving a sorted list costs 16, and a hash table costs about one — a difference that does not depend on how fast the computer is. Across seven test-driven phases you will write linear search, binary search, and a search for where a value belongs in a sorted list; a hash function for strings; and a hash table of buckets that grows as it fills. Then you will compare the three by counting comparisons, and work out when sorting pays for itself.
@@ -47,9 +47,8 @@ two others.
 ### Instructions
 
 The full instructions, the starter file, and the per-phase tests are released
-through the course template after the November 4 session. Once they are
-out, run `ifi8410-update` on the course server, then read
-`Assignments/HW10/instructions/homework10_instructions.md` and work in
+through the course template. On the course server run `ifi8410-update`, then
+read `Assignments/HW10/instructions/homework10_instructions.md` and work in
 `Assignments/HW10/submission/`.
 
 Use only the standard library — no numpy, no pandas. In Phases 1 to 6 do not

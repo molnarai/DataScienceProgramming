@@ -20,7 +20,7 @@ TODO: podcast
 
 ## Presentation
 
-TODO: presentation
+- [Python for Data Analysis](../../slides/slide-08-python-data-analysis/)
 
 ## Read
 

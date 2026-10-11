@@ -4,7 +4,7 @@ due_date = '2026-12-02T23:59:00'
 draft = false
 title = 'Homework 12: Does It Beat Guessing?'
 weight = 120
-status = 'Scheduled'
+status = 'Posted'
 +++
 
 A third of the restaurants in the Yelp data have closed. From what is known about a restaurant — its rating, its number of reviews, its price level, whether it lists opening hours — can a program learn to tell the ones that close from the ones that stay open? Getting a model to produce predictions takes three lines; this assignment is about the question that matters afterwards: are the predictions any good, and compared with what? Across six test-driven phases you will turn a table into features and a target, put a share of the rows aside for testing, compute the baseline that any model has to beat, count the four kinds of right and wrong prediction, and train decision trees of increasing depth with scikit-learn. A tree allowed 30 questions is right on 98.9 % of the restaurants it studied and on 64.9 % of the ones it has not seen — worse than always saying "open".
@@ -45,9 +45,8 @@ tests check that the test rows stayed out of it.
 ### Instructions
 
 The full instructions, the starter file, and the per-phase tests are released
-through the course template after the November 18 session. Once they are
-out, run `ifi8410-update` on the course server, then read
-`Assignments/HW12/instructions/homework12_instructions.md` and work in
+through the course template. On the course server run `ifi8410-update`, then
+read `Assignments/HW12/instructions/homework12_instructions.md` and work in
 `Assignments/HW12/submission/`.
 
 The Yelp business file is already on the cluster; the 600 made-up restaurants

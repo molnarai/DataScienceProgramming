@@ -20,7 +20,7 @@ TODO: podcast
 
 ## Presentation
 
-TODO: presentation
+- [Search and Hashing](../../slides/slide-11-search-hashing/)
 
 ## Read
 

@@ -4,7 +4,7 @@ due_date = '2026-11-04T23:59:00'
 draft = false
 title = 'Homework 8: Same Numbers, Different Pictures'
 weight = 80
-status = 'Scheduled'
+status = 'Posted'
 +++
 
 Describe the Forest Service file of invasive plants first in a handful of numbers, then in pictures, and find out that each hides things the other shows. The mean size of an infestation is 9.12 acres and the median is 0.114 — both are "the average", and one is 80 times the other. Meanwhile four small datasets share the same means, the same standard deviation, and the same correlation, and look nothing alike once drawn. Across seven test-driven phases you will compute centre and spread from their definitions, find quartiles and flag outliers without removing them, measure correlation, and then draw a histogram, a bar chart, a line, and a scatter plot with matplotlib. You will also write a function that audits any figure for what a reader needs — labels, a title, and bars that start at zero — and save a set of figures from the real data.
@@ -46,9 +46,8 @@ and they hold 97 % of all the infested acres.
 ### Instructions
 
 The full instructions, the starter file, and the per-phase tests are released
-through the course template after the October 21 session. Once they are
-out, run `ifi8410-update` on the course server, then read
-`Assignments/HW08/instructions/homework08_instructions.md` and work in
+through the course template. On the course server run `ifi8410-update`, then
+read `Assignments/HW08/instructions/homework08_instructions.md` and work in
 `Assignments/HW08/submission/`.
 
 The cleaned plants file is already on the cluster under

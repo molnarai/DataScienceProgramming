@@ -1,0 +1,7 @@
+{{- /* Renders an assignment's status. Takes the page. A page marked
+       "Posted" whose date is still in the future is shown as "Preview";
+       the check runs at build time, so it changes on the first build
+       on or after the release date. */ -}}
+{{- $status := .Params.status | default "" -}}
+{{- if and (eq $status "Posted") (not .Date.IsZero) (.Date.After now) }}{{ $status = "Preview" }}{{ end -}}
+{{- $status | markdownify -}}

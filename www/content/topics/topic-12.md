@@ -20,7 +20,7 @@ TODO: podcast
 
 ## Presentation
 
-TODO: presentation
+- [Graphs and Shortest Path](../../slides/slide-12-graphs-shortest-path/)
 
 ## Read
 

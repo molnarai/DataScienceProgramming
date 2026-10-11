@@ -20,7 +20,7 @@ TODO: podcast
 
 ## Presentation
 
-TODO: presentation
+- [Introductory Machine Learning](../../slides/slide-13-intro-machine-learning/)
 
 ## Read
 

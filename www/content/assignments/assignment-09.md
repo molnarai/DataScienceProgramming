@@ -4,7 +4,7 @@ due_date = '2026-11-11T23:59:00'
 draft = false
 title = 'Homework 9: An Answer with Error Bars'
 weight = 90
-status = 'Scheduled'
+status = 'Posted'
 +++
 
 A coffee cart sells pastries that cost $1 to bake and sell for $3, and whatever is left in the evening is thrown away. About forty customers a day want one. How many should the cart bake each morning? There is no column to look this up in; the way to get the answer is to let the computer live through ten thousand mornings and count. That is a simulation, and its result has a property no result in this course has had so far: run it again and it changes — one seed says 42, another says 43. Across seven test-driven phases you will check a simulation against a problem with a known answer, run many trials from one seeded generator, attach a standard error and an interval to every estimate, build a model of the cart, compare batch sizes on the same random days, and apply the same idea to real data with the bootstrap.
@@ -46,9 +46,8 @@ your neighbour's, and the tests do not expect them to.
 ### Instructions
 
 The full instructions, the starter file, and the per-phase tests are released
-through the course template after the October 28 session. Once they are
-out, run `ifi8410-update` on the course server, then read
-`Assignments/HW09/instructions/homework09_instructions.md` and work in
+through the course template. On the course server run `ifi8410-update`, then
+read `Assignments/HW09/instructions/homework09_instructions.md` and work in
 `Assignments/HW09/submission/`.
 
 Use numpy and pandas, which are already in the course environment. Every
