@@ -12,11 +12,12 @@ Some questions cannot be answered by looking something up, because the answer de
 <!--more-->
 Simulation also brings a difficulty nothing earlier in the course had: run the program again and the answer changes. A simulated number is an estimate, so it comes with a **standard error** and an interval, both computable from a single run. The error shrinks with the square root of the number of trials — a hundred times the work buys one more decimal place — which gives "how many trials?" an answer: enough that the interval is narrower than the difference you care about. To compare options fairly, give each exactly the same random draws, so the luck is in both results and cancels out of the difference. The same machinery, pointed at real data, is the **bootstrap**: resample the sample, with replacement, to see how far its mean or median would move. Report the estimate with its interval, its number of trials, its seed, and its assumptions; the simulation answers the model, not the world.
 
-TODO: marquee image
+
+{{<figure src="imgs/Mastering_Computer_Simulation_Rules.png" alt="Figure: Computer Simulations and Randomness" >}}
 
 ## Listen
 
-TODO: podcast
+{{< podcast src="https://insight-gsu-edu-msa8700-public-files-us-east-1.s3.us-east-1.amazonaws.com/podcast/building_monte_carlo_simulations_in_python.m4a" title="Building Monte Carlo Simulations in Python" >}}
 
 ## Presentation
 
