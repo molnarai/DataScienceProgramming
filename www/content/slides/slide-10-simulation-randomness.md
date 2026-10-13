@@ -4,7 +4,7 @@ description = "Monte Carlo simulation with seeded generators: trials, standard e
 weight = 100
 outputs = ["Reveal"]
 math = false
-thumbnail = "../imgs/slides/.png"
+thumbnail = "../imgs/slides/monte-carlo-casino.jpeg"
 
 [reveal_hugo]
 custom_theme = "css/reveal-robinson.css"
