@@ -11,8 +11,9 @@ lastmod: 2026-09-07
 
 
 
-<div class="text-center my-4">
-  <a href="https://llmgraderlive.com/Participant/?moderator=peter@molnar.ai" class="btn btn-primary btn-lg px-5 py-3 fw-bold shadow" target="_blank" rel="noopener">Connect to the LiveSynthesis session</a>
+<div class="d-flex justify-content-center flex-wrap gap-3 my-4">
+  <a href="https://llmgraderlive.com/Mobile/?moderator=peter@molnar.ai" class="btn btn-primary btn-lg px-4 py-2 fw-bold shadow" target="_blank" rel="noopener">Connect to Mobile</a>
+  <a href="https://llmgraderlive.com/Participant/?moderator=peter@molnar.ai" class="btn btn-primary btn-lg px-4 py-2 fw-bold shadow" target="_blank" rel="noopener">Connect to Desktop</a>
 </div>
 
 Join the LiveSynthesis session at the beginning in class, whether you attend in person or remotely.
